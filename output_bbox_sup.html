@@ -1,0 +1,2430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Visualization (bbox)</title>
+    <style>
+    img {
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+        border: 1px solid #ccc;
+    }
+    .image-container {
+        width: 30%;
+        flex: none;
+    }
+    .info-container {
+        width: 30%;
+        padding-left: 20px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.314453125, 0.6953125, 0.6484375, 1.0]_taskonomy_deemston_point_656_view_9_domain_rgb.png" src="https://drive.google.com/uc?export=view&id=17K_tF_Rt4Z7vNMUHQTWqo9S6Xw4n0FQM">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_deemston_point_656_view_9_domain_rgb.png<br></p>
+        <p>keypoint: [0.537109375, 0.8763020833333334]<br></p>
+        <p>bbox: [0.314453125, 0.6953125, 0.6484375, 1.0]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.634765625, 0.1640625, 0.71484375, 0.390625]_taskonomy_ashport_point_228_view_3_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1OCrwTm6go0LHR5y2xgi_1cpEwKgxi0-H">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_ashport_point_228_view_3_domain_rgb.png<br></p>
+        <p>keypoint: [0.677734375, 0.28515625]<br></p>
+        <p>bbox: [0.634765625, 0.1640625, 0.71484375, 0.390625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.74609375, 0.6875, 0.779296875, 0.728515625]_taskonomy_herricks_point_824_view_3_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1eEmA-8Ph9w5ecczrufyMGgXzfci7S_y2">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_herricks_point_824_view_3_domain_rgb.png<br></p>
+        <p>keypoint: [0.76171875, 0.7109375]<br></p>
+        <p>bbox: [0.74609375, 0.6875, 0.779296875, 0.728515625]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.33541666666666664, 0.41203703703703703, 0.7505208333333333, 0.9490740740740741]_EK_0112_P02_12_frame_0000024993.jpg" src="https://drive.google.com/uc?export=view&amp;id=1vb2Nf0BRedAJc_O4FbqnJ0K5LDQsX3gG">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_0112_P02_12_frame_0000024993.jpg<br></p>
+        <p>keypoint: [0.546875, 0.58984375]<br></p>
+        <p>bbox: [0.33541667461395264, 0.41203704476356506, 0.7505208253860474, 0.9490740895271301]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.0, 0.86328125, 0.048828125, 0.998046875]_taskonomy_markleeville_point_1089_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1L9q8l7skXotaos25nSI5TRkhds0Rpjxx">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_markleeville_point_1089_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.021484375, 0.9036458333333334]<br></p>
+        <p>bbox: [0.0, 0.86328125, 0.048828125, 0.998046875]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.279296875, 0.439453125, 0.294921875, 0.474609375]_taskonomy_ribera_point_50_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1-NTnhCd0MZPUTCAVA0wTGRumjB076S69">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_ribera_point_50_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.287109375, 0.4544270833333333]<br></p>
+        <p>bbox: [0.279296875, 0.439453125, 0.294921875, 0.474609375]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.857421875, 0.4140625, 0.875, 0.474609375]_taskonomy_hornsby_point_770_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1KH1HAZUR3eWk2QuTxCFKGfT8yyIliLYC">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_hornsby_point_770_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.8671875, 0.4505208333333333]<br></p>
+        <p>bbox: [0.857421875, 0.4140625, 0.875, 0.474609375]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.14296875, 0.33194444444444443, 0.40546875, 0.6930555555555555]_AR_zBNx4sJd4_k_5_900_15.jpg" src="https://drive.google.com/uc?export=view&amp;id=1GjFplyYOVne00zKzh61E7jQZ3qctNni2">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_zBNx4sJd4_k_5_900_15.jpg<br></p>
+        <p>keypoint: [0.26171875, 0.4869791666666667]<br></p>
+        <p>bbox: [0.14296874403953552, 0.33194443583488464, 0.40546876192092896, 0.6930555701255798]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.826171875, 0.677734375, 0.93359375, 0.791015625]_taskonomy_macedon_point_215_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1pX9GW4H-8Qm65kOZe4vHvC1XhaIgvbF1">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_macedon_point_215_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.880859375, 0.7356770833333334]<br></p>
+        <p>bbox: [0.826171875, 0.677734375, 0.93359375, 0.791015625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.7578125, 0.568359375, 0.822265625, 0.7265625]_taskonomy_hortense_point_268_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1Utq-yB_vkjS-P3DnbsaDfuPBxGEw_9wE">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_hortense_point_268_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.791015625, 0.6497395833333334]<br></p>
+        <p>bbox: [0.7578125, 0.568359375, 0.822265625, 0.7265625]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.32421875, 0.373046875, 0.404296875, 0.5625]_taskonomy_shauck_point_1102_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1YxJ7Hy6Fff79SbjwHpB2LJO1yw5GHY6i">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_shauck_point_1102_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.369140625, 0.46875]<br></p>
+        <p>bbox: [0.32421875, 0.373046875, 0.404296875, 0.5625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.06302083333333333, 0.2564814814814815, 0.19166666666666668, 0.4074074074074074]_EK_frame_0000033055.jpg" src="https://drive.google.com/uc?export=view&amp;id=1TdiBiFeNxkMl5n9gBrbzQZyoKUBA0q0G">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_frame_0000033055.jpg<br></p>
+        <p>keypoint: [0.14453125, 0.3385416666666667]<br></p>
+        <p>bbox: [0.06302083283662796, 0.25648146867752075, 0.19166666269302368, 0.40740740299224854]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.00078125, 0.002777777777777778, 0.2578125, 1.0]_AR_pNG2W675Izs_3_2070_45.jpg" src="https://drive.google.com/uc?export=view&amp;id=1z_U36n3UelM9dw55_nFJmAS7rgemMuVW">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_pNG2W675Izs_3_2070_45.jpg<br></p>
+        <p>keypoint: [0.0849609375, 0.5221354166666666]<br></p>
+        <p>bbox: [0.0007812500116415322, 0.0027777778450399637, 0.2578125, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.265625, 0.408203125, 0.3828125, 0.685546875]_taskonomy_wells_point_149_view_5_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1eBf_tjY-06-cgt73ItK6NCFirv7_rJEB">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_wells_point_149_view_5_domain_rgb.png<br></p>
+        <p>keypoint: [0.330078125, 0.5403645833333334]<br></p>
+        <p>bbox: [0.265625, 0.408203125, 0.3828125, 0.685546875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 2<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: push<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.41796875, 0.416015625, 0.5390625, 0.53515625]_taskonomy_elmira_point_232_view_2_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1bqZz6DOqtVNmG5Qv35kjGbhFiJDmOFiG">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_elmira_point_232_view_2_domain_rgb.png<br></p>
+        <p>keypoint: [0.46875, 0.4505208333333333]<br></p>
+        <p>bbox: [0.41796875, 0.416015625, 0.5390625, 0.53515625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.34765625, 0.556640625, 0.453125, 0.673828125]_taskonomy_ashport_point_1201_view_15_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1j27IlZLb8zoF0tqYrkyidPvb-ywtKQtL">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_ashport_point_1201_view_15_domain_rgb.png<br></p>
+        <p>keypoint: [0.423828125, 0.5598958333333334]<br></p>
+        <p>bbox: [0.34765625, 0.556640625, 0.453125, 0.673828125]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.21484375, 0.513671875, 0.30859375, 0.689453125]_taskonomy_shauck_point_1156_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1a8a-bx3LCpfWCp8dsRCrrN-xlVQdFzre">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_shauck_point_1156_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.263671875, 0.6028645833333334]<br></p>
+        <p>bbox: [0.21484375, 0.513671875, 0.30859375, 0.689453125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 2<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: push<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.666015625, 0.482421875, 0.78125, 0.681640625]_taskonomy_elmira_point_121_view_3_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1m1cers7ID86Z2OLOdEla_fTlY9z5ZBtI">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_elmira_point_121_view_3_domain_rgb.png<br></p>
+        <p>keypoint: [0.724609375, 0.52734375]<br></p>
+        <p>bbox: [0.666015625, 0.482421875, 0.78125, 0.681640625]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.564453125, 0.001953125, 0.6640625, 0.103515625]_taskonomy_texasville_point_1264_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1Jh6IjSeyFHP_UHYb-utvYzUayC5IEcb3">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_texasville_point_1264_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.615234375, 0.046875]<br></p>
+        <p>bbox: [0.564453125, 0.001953125, 0.6640625, 0.103515625]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 2<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.0140625, 0.5263888888888889, 0.1296875, 0.6361111111111111]_AR_ajDYmOEuzjo_10_1080_35.jpg" src="https://drive.google.com/uc?export=view&amp;id=1JJIVjWspHNIjGO_3ToxYPSwRsPTZE1YT">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_ajDYmOEuzjo_10_1080_35.jpg<br></p>
+        <p>keypoint: [0.0712890625, 0.5807291666666666]<br></p>
+        <p>bbox: [0.01406249962747097, 0.5263888835906982, 0.12968750298023224, 0.6361111402511597]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.29375, 0.16111111111111112, 0.43984375, 0.3111111111111111]_AR_3_s3RlDaZRo_26_1080_25.jpg" src="https://drive.google.com/uc?export=view&amp;id=15NPsgeDuX52pkQtYBZhexUSAxvbDNeB8">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_3_s3RlDaZRo_26_1080_25.jpg<br></p>
+        <p>keypoint: [0.37109375, 0.2669270833333333]<br></p>
+        <p>bbox: [0.29374998807907104, 0.16111111640930176, 0.4398437440395355, 0.31111112236976624]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.447265625, 0.912109375, 0.5703125, 1.0]_taskonomy_markleeville_point_1089_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1Dmhkc63m2iyeDVnnh_SoF0ONPzBVPJq9">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_markleeville_point_1089_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.509765625, 0.94921875]<br></p>
+        <p>bbox: [0.447265625, 0.912109375, 0.5703125, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 2<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.552734375, 0.611328125, 0.71484375, 0.6796875]_taskonomy_eastville_point_74_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=18QRRWXD77EkctE6DijRsruWT3CN8DyDx">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_eastville_point_74_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.634765625, 0.6458333333333334]<br></p>
+        <p>bbox: [0.552734375, 0.611328125, 0.71484375, 0.6796875]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.0, 0.17314814814814813, 0.12708333333333333, 0.462037037037037]_EK_0059_P37_101_frame_0000058805.jpg" src="https://drive.google.com/uc?export=view&amp;id=1rYTKKZ9d4v7SFZhVYU4fCEHGFndh6tWw">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_0059_P37_101_frame_0000058805.jpg<br></p>
+        <p>keypoint: [0.0498046875, 0.3294270833333333]<br></p>
+        <p>bbox: [0.0, 0.17314815521240234, 0.12708333134651184, 0.46203702688217163]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.373046875, 0.509765625, 0.47265625, 0.58984375]_taskonomy_kinde_point_808_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1G5gp3Z8EkJO5ItA6p0gTtv4QBNmUNTxB">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_kinde_point_808_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.431640625, 0.5598958333333334]<br></p>
+        <p>bbox: [0.373046875, 0.509765625, 0.47265625, 0.58984375]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.615234375, 0.560546875, 0.654296875, 0.748046875]_taskonomy_yscloskey_point_537_view_3_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1TwQIsmoWwRdsbblSqLoWbfjTfM7p6DkY">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_yscloskey_point_537_view_3_domain_rgb.png<br></p>
+        <p>keypoint: [0.625, 0.6809895833333334]<br></p>
+        <p>bbox: [0.615234375, 0.560546875, 0.654296875, 0.748046875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.78125, 0.546875, 0.82421875, 0.595703125]_taskonomy_wesley_point_520_view_2_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1Sj8ZjuNL0_D2AHHNlHpWB8OSUpTyLak1">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_wesley_point_520_view_2_domain_rgb.png<br></p>
+        <p>keypoint: [0.802734375, 0.5716145833333334]<br></p>
+        <p>bbox: [0.78125, 0.546875, 0.82421875, 0.595703125]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.9161458333333333, 0.6111111111111112, 1.0, 0.8972222222222223]_EK_frame_0000015394.jpg" src="https://drive.google.com/uc?export=view&amp;id=1fqBwnE0bSWpZrosSoFXXX7neVd3UN-EJ">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_frame_0000015394.jpg<br></p>
+        <p>keypoint: [0.9892578125, 0.73046875]<br></p>
+        <p>bbox: [0.9161458611488342, 0.6111111044883728, 1.0, 0.8972222208976746]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.76171875, 0.302734375, 0.853515625, 0.65625]_taskonomy_glassboro_point_1330_view_6_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1gERFkwS7jf1o85XdJQ7k85MnQ4bQz18p">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_glassboro_point_1330_view_6_domain_rgb.png<br></p>
+        <p>keypoint: [0.8046875, 0.5169270833333334]<br></p>
+        <p>bbox: [0.76171875, 0.302734375, 0.853515625, 0.65625]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.732421875, 0.51953125, 0.77734375, 0.60546875]_taskonomy_kinde_point_189_view_2_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1D7iMzeXsfaUdV980KUr60-ka9yl5DBg2">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_kinde_point_189_view_2_domain_rgb.png<br></p>
+        <p>keypoint: [0.751953125, 0.5716145833333334]<br></p>
+        <p>bbox: [0.732421875, 0.51953125, 0.77734375, 0.60546875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.951171875, 0.357421875, 1.0, 0.654296875]_taskonomy_lessley_point_1622_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1HQ5gfN8ESEuekIgFCs9DMNG6u5TapEJ3">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_lessley_point_1622_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.98046875, 0.46484375]<br></p>
+        <p>bbox: [0.951171875, 0.357421875, 1.0, 0.654296875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.0, 0.5055555555555555, 0.24375, 0.9111111111111111]_AR_OerDWZgDUmU_9_1260_65.jpg" src="https://drive.google.com/uc?export=view&amp;id=1aDr5Y_M6xXOzMQIz29t1LKvX_3vAmT6w">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_OerDWZgDUmU_9_1260_65.jpg<br></p>
+        <p>keypoint: [0.1357421875, 0.6770833333333334]<br></p>
+        <p>bbox: [0.0, 0.5055555701255798, 0.24375000596046448, 0.9111111164093018]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.3380208333333333, 0.25462962962962965, 0.49270833333333336, 0.6842592592592592]_EK_0046_P30_112_frame_0000002660.jpg" src="https://drive.google.com/uc?export=view&amp;id=1V05sS7xN8dTqYFBNIQ-VIrQomm2ZxkY3">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_0046_P30_112_frame_0000002660.jpg<br></p>
+        <p>keypoint: [0.4052734375, 0.3841145833333333]<br></p>
+        <p>bbox: [0.33802083134651184, 0.25462964177131653, 0.49270832538604736, 0.6842592358589172]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.693359375, 0.55078125, 0.7734375, 0.6015625]_taskonomy_artois_point_266_view_5_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1640H4DcpoHxyecaivvpE81x-eRysSO7Z">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_artois_point_266_view_5_domain_rgb.png<br></p>
+        <p>keypoint: [0.73046875, 0.5755208333333334]<br></p>
+        <p>bbox: [0.693359375, 0.55078125, 0.7734375, 0.6015625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.546875, 0.0, 0.778125, 1.0]_AR_ieMOmyOcFkg_27_270_15.jpg" src="https://drive.google.com/uc?export=view&amp;id=1AAihjmSv4acoJ7xPj7pyYBfCIa8gh4p_">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_ieMOmyOcFkg_27_270_15.jpg<br></p>
+        <p>keypoint: [0.583984375, 0.5]<br></p>
+        <p>bbox: [0.546875, 0.0, 0.778124988079071, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 2<br></p>
+        <p>interaction_type: 2<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: push<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.052734375, 0.5703125, 0.078125, 0.61328125]_taskonomy_artois_point_595_view_13_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1uHjiNv4xBNjXfwEJUgreJFlSSko9y20N">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_artois_point_595_view_13_domain_rgb.png<br></p>
+        <p>keypoint: [0.064453125, 0.5911458333333334]<br></p>
+        <p>bbox: [0.052734375, 0.5703125, 0.078125, 0.61328125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.529296875, 0.25, 0.625, 0.35546875]_taskonomy_macedon_point_1201_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1_SeWRcjngCJkMNOC6ChwKkRyNDkE-aua">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_macedon_point_1201_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.576171875, 0.3020833333333333]<br></p>
+        <p>bbox: [0.529296875, 0.25, 0.625, 0.35546875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.02734375, 0.556640625, 0.07421875, 0.607421875]_taskonomy_wesley_point_520_view_2_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1aE8g0ybSdcgq4wYxOFPo0cQ64NIf8CbF">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_wesley_point_520_view_2_domain_rgb.png<br></p>
+        <p>keypoint: [0.048828125, 0.58203125]<br></p>
+        <p>bbox: [0.02734375, 0.556640625, 0.07421875, 0.607421875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.15104166666666666, 0.0, 0.3145833333333333, 0.13703703703703704]_EK_frame_0000061662.jpg" src="https://drive.google.com/uc?export=view&amp;id=1xe4B7NmRhppbjFk7c8CqQubeqJULcG4B">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_frame_0000061662.jpg<br></p>
+        <p>keypoint: [0.2919921875, 0.07942708333333333]<br></p>
+        <p>bbox: [0.1510416716337204, 0.0, 0.31458333134651184, 0.13703703880310059]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.5625, 0.76171875, 0.607421875, 0.8515625]_taskonomy_ashport_point_934_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1TsYLXvpKjzxgG1few-ezkRe-Fm9f2-Th">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_ashport_point_934_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.580078125, 0.8177083333333334]<br></p>
+        <p>bbox: [0.5625, 0.76171875, 0.607421875, 0.8515625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.779296875, 0.87109375, 0.814453125, 1.0]_taskonomy_howie_point_535_view_2_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1UUt2m1ISbCWexhMejBdE7nznsqOY3oS7">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_howie_point_535_view_2_domain_rgb.png<br></p>
+        <p>keypoint: [0.796875, 0.9583333333333334]<br></p>
+        <p>bbox: [0.779296875, 0.87109375, 0.814453125, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.6375, 0.6458333333333334, 0.80859375, 0.9875]_AR_4GICk8bWR2w_0_22950_25.jpg" src="https://drive.google.com/uc?export=view&amp;id=1Z-muT0Ivof_AaKARKp1q9NiG-s9_By4Y">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_4GICk8bWR2w_0_22950_25.jpg<br></p>
+        <p>keypoint: [0.708984375, 0.7890625]<br></p>
+        <p>bbox: [0.637499988079071, 0.6458333134651184, 0.80859375, 0.987500011920929]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.892578125, 0.599609375, 0.931640625, 0.6640625]_taskonomy_greigsville_point_54_view_3_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1tWoKKtz1RB0GLvUK_jG8haRwc1wqB1jJ">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_greigsville_point_54_view_3_domain_rgb.png<br></p>
+        <p>keypoint: [0.91015625, 0.6263020833333334]<br></p>
+        <p>bbox: [0.892578125, 0.599609375, 0.931640625, 0.6640625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.14765625, 0.0, 0.23359375, 0.15555555555555556]_AR_o8qgobSgv4A_53_0_65.jpg" src="https://drive.google.com/uc?export=view&amp;id=16_qkAu1ELCS96S1w7BF6F7nQF94HyhM_">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_o8qgobSgv4A_53_0_65.jpg<br></p>
+        <p>keypoint: [0.1875, 0.09635416666666667]<br></p>
+        <p>bbox: [0.14765624701976776, 0.0, 0.23359374701976776, 0.15555556118488312]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.4296875, 0.19140625, 0.48828125, 0.4375]_taskonomy_ashport_point_1473_view_5_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=19dUyIVevPaEQAR9pjVfDfte7o5gYSmQ2">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_ashport_point_1473_view_5_domain_rgb.png<br></p>
+        <p>keypoint: [0.455078125, 0.31640625]<br></p>
+        <p>bbox: [0.4296875, 0.19140625, 0.48828125, 0.4375]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.73828125, 0.517578125, 0.876953125, 0.7421875]_taskonomy_pearce_point_1247_view_7_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1cqEwDenWL1mBIYBW6Bu5yCElOEhkfaCf">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_pearce_point_1247_view_7_domain_rgb.png<br></p>
+        <p>keypoint: [0.8125, 0.62890625]<br></p>
+        <p>bbox: [0.73828125, 0.517578125, 0.876953125, 0.7421875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.53515625, 0.494140625, 0.576171875, 0.53125]_taskonomy_lessley_point_1571_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=11MCwg7nkS7xavmSUsVoBqLX_ICK9WGLH">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_lessley_point_1571_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.560546875, 0.51953125]<br></p>
+        <p>bbox: [0.53515625, 0.494140625, 0.576171875, 0.53125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.603515625, 0.140625, 0.751953125, 0.751953125]_taskonomy_macedon_point_1748_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=18NQYf8oZgOvqQjYz-ZDmgYN7B8dch3Lg">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_macedon_point_1748_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.677734375, 0.4466145833333333]<br></p>
+        <p>bbox: [0.603515625, 0.140625, 0.751953125, 0.751953125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 2<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: push<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.498046875, 0.0, 0.685546875, 0.9375]_taskonomy_eastville_point_1_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1LWWYwzEKVvdaCH9iiGNPd-2Eev3MCuaK">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_eastville_point_1_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.57421875, 0.48828125]<br></p>
+        <p>bbox: [0.498046875, 0.0, 0.685546875, 0.9375]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.478515625, 0.62109375, 0.4921875, 0.671875]_taskonomy_greigsville_point_199_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1erNTyG6vxGFXBI6VMFofGrgRNjKbOIkK">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_greigsville_point_199_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.484375, 0.64453125]<br></p>
+        <p>bbox: [0.478515625, 0.62109375, 0.4921875, 0.671875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.5078125, 0.384765625, 0.58984375, 0.55859375]_taskonomy_almota_point_68_view_3_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1N2UHJBtZihc3Usw9SaBAUwLZMP-xLShc">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_almota_point_68_view_3_domain_rgb.png<br></p>
+        <p>keypoint: [0.54296875, 0.4505208333333333]<br></p>
+        <p>bbox: [0.5078125, 0.384765625, 0.58984375, 0.55859375]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.509765625, 0.6171875, 0.568359375, 0.71875]_taskonomy_eastville_point_74_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1MtijJvQtzc62yBtttEsWz_CBlpjOYSKn">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_eastville_point_74_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.5390625, 0.6653645833333334]<br></p>
+        <p>bbox: [0.509765625, 0.6171875, 0.568359375, 0.71875]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.4453125, 0.255859375, 0.4765625, 0.361328125]_taskonomy_jennie_point_547_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1nVqx4eow9E_o8rk1FD8uDsN95H7r_-bG">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_jennie_point_547_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.462890625, 0.3177083333333333]<br></p>
+        <p>bbox: [0.4453125, 0.255859375, 0.4765625, 0.361328125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.728515625, 0.080078125, 0.875, 1.0]_taskonomy_maricopa_point_456_view_7_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1xy_DjOpGeflsVHsCoea958svuieGEOgr">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_maricopa_point_456_view_7_domain_rgb.png<br></p>
+        <p>keypoint: [0.80078125, 0.5442708333333334]<br></p>
+        <p>bbox: [0.728515625, 0.080078125, 0.875, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.712890625, 0.48828125, 1.0, 0.818359375]_taskonomy_wyldwood_point_11_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1GIi3drCzN4kXL4urAx9Eb0613b9pSKJM">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_wyldwood_point_11_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.830078125, 0.64453125]<br></p>
+        <p>bbox: [0.712890625, 0.48828125, 1.0, 0.818359375]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.4739583333333333, 0.32037037037037036, 0.8244791666666667, 0.5990740740740741]_EK_0112_P02_12_frame_0000077815.jpg" src="https://drive.google.com/uc?export=view&amp;id=1ZHTdFn6pTKV3uNTimIHBM8vBWwBpB8Vu">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_0112_P02_12_frame_0000077815.jpg<br></p>
+        <p>keypoint: [0.640625, 0.46484375]<br></p>
+        <p>bbox: [0.4739583432674408, 0.3203703761100769, 0.8244791626930237, 0.5990740656852722]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.794921875, 0.267578125, 0.919921875, 0.712890625]_taskonomy_graceville_point_699_view_5_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1Q5rYc925KF844vB9OHoDvjBv5hjI8rnj">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_graceville_point_699_view_5_domain_rgb.png<br></p>
+        <p>keypoint: [0.8515625, 0.4544270833333333]<br></p>
+        <p>bbox: [0.794921875, 0.267578125, 0.919921875, 0.712890625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.26953125, 0.16796875, 0.365234375, 0.529296875]_taskonomy_shauck_point_1586_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1yphaTYbSg7-Bb1myWeJn3R2wd_LaFQfa">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_shauck_point_1586_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.306640625, 0.3333333333333333]<br></p>
+        <p>bbox: [0.26953125, 0.16796875, 0.365234375, 0.529296875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.22890625, 0.6472222222222223, 0.7625, 1.0]_AR_ieMOmyOcFkg_16_0_45.jpg" src="https://drive.google.com/uc?export=view&amp;id=12s30BoCu3_DRyjEp1a1o7icvUBWU_6Fz">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_ieMOmyOcFkg_16_0_45.jpg<br></p>
+        <p>keypoint: [0.4013671875, 0.9322916666666666]<br></p>
+        <p>bbox: [0.22890624403953552, 0.6472222208976746, 0.762499988079071, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.080078125, 0.6953125, 0.169921875, 0.76953125]_taskonomy_lessley_point_1825_view_3_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1QDfWW3smsKafkfDMUHIZjKNtEicIt_hd">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_lessley_point_1825_view_3_domain_rgb.png<br></p>
+        <p>keypoint: [0.109375, 0.7356770833333334]<br></p>
+        <p>bbox: [0.080078125, 0.6953125, 0.169921875, 0.76953125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.60546875, 0.3828125, 0.65625, 0.41015625]_taskonomy_kinde_point_442_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1AhKpQ-YXJH8i4E8KwyDZ5yOzv3isq_Tr">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_kinde_point_442_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.6328125, 0.3984375]<br></p>
+        <p>bbox: [0.60546875, 0.3828125, 0.65625, 0.41015625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.0, 0.0, 0.4609375, 0.9388888888888889]_AR_WOftABtR4eQ_27_13320_15.jpg" src="https://drive.google.com/uc?export=view&amp;id=1OAegYbeFA6Goenq9KtNbTrFI25ZSqoNy">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_WOftABtR4eQ_27_13320_15.jpg<br></p>
+        <p>keypoint: [0.150390625, 0.2760416666666667]<br></p>
+        <p>bbox: [0.0, 0.0, 0.4609375, 0.9388889074325562]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.384765625, 0.427734375, 0.400390625, 0.435546875]_taskonomy_starks_point_619_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=12he1fsSaSvIR4XqJd2T0aqvYaeui_lmQ">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_starks_point_619_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.392578125, 0.4296875]<br></p>
+        <p>bbox: [0.384765625, 0.427734375, 0.400390625, 0.435546875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.751953125, 0.4375, 0.857421875, 0.474609375]_taskonomy_maricopa_point_419_view_2_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1yBs4mRN9KCBgL8wDTbLtHEfW70M6RAGd">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_maricopa_point_419_view_2_domain_rgb.png<br></p>
+        <p>keypoint: [0.80078125, 0.4622395833333333]<br></p>
+        <p>bbox: [0.751953125, 0.4375, 0.857421875, 0.474609375]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.0, 0.619140625, 0.29296875, 0.982421875]_taskonomy_gravelly_point_763_view_2_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=123g-UFWJqEz_JbsB6pX_xEUho5jDUoZL">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_gravelly_point_763_view_2_domain_rgb.png<br></p>
+        <p>keypoint: [0.10546875, 0.7734375]<br></p>
+        <p>bbox: [0.0, 0.619140625, 0.29296875, 0.982421875]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.404296875, 0.615234375, 0.474609375, 0.68359375]_taskonomy_tallmadge_point_234_view_2_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1Rrkf-vqTEfNpPfEhPLDLnZPcOA5g1fOw">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_tallmadge_point_234_view_2_domain_rgb.png<br></p>
+        <p>keypoint: [0.447265625, 0.6497395833333334]<br></p>
+        <p>bbox: [0.404296875, 0.615234375, 0.474609375, 0.68359375]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.685546875, 0.3828125, 0.75390625, 0.486328125]_taskonomy_waipahu_point_209_view_6_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1FXgTJArmZ23mso6tIXfRhwNr0wuOiq1h">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_waipahu_point_209_view_6_domain_rgb.png<br></p>
+        <p>keypoint: [0.716796875, 0.4375]<br></p>
+        <p>bbox: [0.685546875, 0.3828125, 0.75390625, 0.486328125]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.875, 0.603515625, 1.0, 0.767578125]_taskonomy_cashel_point_635_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=13AAPUG1Ukgk4QmcEtRk-qpnnW-7TtDed">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_cashel_point_635_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.962890625, 0.6875]<br></p>
+        <p>bbox: [0.875, 0.603515625, 1.0, 0.767578125]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.38125, 0.000925925925925926, 0.5203125, 0.13240740740740742]_EK_0026_P09_104_frame_0000000326.jpg" src="https://drive.google.com/uc?export=view&amp;id=18-qKyNfB33b5qy5yy8tS32WsDSS8t2HF">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_0026_P09_104_frame_0000000326.jpg<br></p>
+        <p>keypoint: [0.455078125, 0.08723958333333333]<br></p>
+        <p>bbox: [0.3812499940395355, 0.0009259259095415473, 0.520312488079071, 0.13240741193294525]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.486328125, 0.650390625, 0.546875, 0.744140625]_taskonomy_silerton_point_637_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1-6AZgGhyFaB2CuoDSkkiCvoADUgU4G3b">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_silerton_point_637_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.51953125, 0.6927083333333334]<br></p>
+        <p>bbox: [0.486328125, 0.650390625, 0.546875, 0.744140625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.0, 0.04814814814814815, 0.178125, 0.40370370370370373]_EK_0026_P09_104_frame_0000018298.jpg" src="https://drive.google.com/uc?export=view&amp;id=1kRWlSq4nYiaf2YAaiia4UMwY2bO3yBV-">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_0026_P09_104_frame_0000018298.jpg<br></p>
+        <p>keypoint: [0.1064453125, 0.2682291666666667]<br></p>
+        <p>bbox: [0.0, 0.04814814776182175, 0.17812499403953552, 0.4037036895751953]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.259375, 0.0, 1.0, 1.0]_AR_Ij3x0pNVygU_0_1530_75.jpg" src="https://drive.google.com/uc?export=view&amp;id=1D-LVktYJNwbJF8C5tu1tM7Me7dnbBNcW">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_Ij3x0pNVygU_0_1530_75.jpg<br></p>
+        <p>keypoint: [0.6572265625, 0.5325520833333334]<br></p>
+        <p>bbox: [0.2593750059604645, 0.0, 1.0, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 2<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: push<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.11328125, 0.55078125, 0.171875, 0.625]_taskonomy_scioto_point_566_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=118Flsn5sluCoPiUo7YD_aNaxL0C7UFQn">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_scioto_point_566_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.14453125, 0.5911458333333334]<br></p>
+        <p>bbox: [0.11328125, 0.55078125, 0.171875, 0.625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.23125, 0.8013888888888889, 0.275, 0.9138888888888889]_AR_OerDWZgDUmU_5_720_85.jpg" src="https://drive.google.com/uc?export=view&amp;id=1w48WGJXANCDictKf2ksOWbHqOGD7xKeK">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_OerDWZgDUmU_5_720_85.jpg<br></p>
+        <p>keypoint: [0.24609375, 0.859375]<br></p>
+        <p>bbox: [0.23125000298023224, 0.8013888597488403, 0.2750000059604645, 0.9138888716697693]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.321875, 0.0, 0.6, 0.524074074074074]_EK_frame_0000033055.jpg" src="https://drive.google.com/uc?export=view&amp;id=1tsLlGK8lv-gqsg6si5pkclvoVaKH3EXn">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_frame_0000033055.jpg<br></p>
+        <p>keypoint: [0.4638671875, 0.2565104166666667]<br></p>
+        <p>bbox: [0.3218750059604645, 0.0, 0.6000000238418579, 0.5240740776062012]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.78359375, 0.0, 0.94765625, 0.28055555555555556]_AR_5jxYzSlZT2s_10_9360_35.jpg" src="https://drive.google.com/uc?export=view&amp;id=1QARXKlWV6-8tmsTy2FHWLb8RCsLBWuwo">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_5jxYzSlZT2s_10_9360_35.jpg<br></p>
+        <p>keypoint: [0.8564453125, 0.11197916666666667]<br></p>
+        <p>bbox: [0.7835937738418579, 0.0, 0.9476562738418579, 0.2805555462837219]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.2734375, 0.310546875, 0.33203125, 0.482421875]_taskonomy_kinde_point_442_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=15-sPCXpMEaFR3gitXwt0cIk3TwbmhOdy">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_kinde_point_442_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.30078125, 0.390625]<br></p>
+        <p>bbox: [0.2734375, 0.310546875, 0.33203125, 0.482421875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.1796875, 0.681640625, 0.267578125, 0.7578125]_taskonomy_sagerton_point_192_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1-FmwFxMp8qNLfF0VQCVFxHU7IQBS0MTy">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_sagerton_point_192_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.23046875, 0.7200520833333334]<br></p>
+        <p>bbox: [0.1796875, 0.681640625, 0.267578125, 0.7578125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.728125, 0.7444444444444445, 0.8390625, 1.0]_AR_Sdpvsind1S0_5_900_15.jpg" src="https://drive.google.com/uc?export=view&amp;id=1CRpCwipeM1V1tiQSpcqSYoR-HuA8tQsZ">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_Sdpvsind1S0_5_900_15.jpg<br></p>
+        <p>keypoint: [0.7890625, 0.8854166666666666]<br></p>
+        <p>bbox: [0.7281249761581421, 0.7444444298744202, 0.839062511920929, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.31875, 0.0, 0.4984375, 1.0]_AR_ieMOmyOcFkg_12_2520_75.jpg" src="https://drive.google.com/uc?export=view&amp;id=1zDWcDVJiKZ4VJ9t3XTbSKjdCg8JvP_on">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_ieMOmyOcFkg_12_2520_75.jpg<br></p>
+        <p>keypoint: [0.404296875, 0.5091145833333334]<br></p>
+        <p>bbox: [0.3187499940395355, 0.0, 0.4984374940395355, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.6171875, 0.46875, 0.833984375, 0.611328125]_taskonomy_swormville_point_177_view_3_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1bkqO2abroKbFHzqhGgpEw3Z_BOj4byLk">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_swormville_point_177_view_3_domain_rgb.png<br></p>
+        <p>keypoint: [0.720703125, 0.54296875]<br></p>
+        <p>bbox: [0.6171875, 0.46875, 0.833984375, 0.611328125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 2<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: translation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.37109375, 0.6194444444444445, 0.7140625, 0.7833333333333333]_EK_0100_P12_02_frame_0000047525.jpg" src="https://drive.google.com/uc?export=view&amp;id=1RpYHVbKvue76Kb6Q9wn9ahYURWCD3LHN">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_0100_P12_02_frame_0000047525.jpg<br></p>
+        <p>keypoint: [0.400390625, 0.7109375]<br></p>
+        <p>bbox: [0.37109375, 0.6194444298744202, 0.714062511920929, 0.7833333611488342]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.15234375, 0.32222222222222224, 0.4140625, 0.775]_AR_ieMOmyOcFkg_52_360_75.jpg" src="https://drive.google.com/uc?export=view&amp;id=1q3RTbaSIlwpb_1hg_wgMZrClXzj1-_lQ">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_ieMOmyOcFkg_52_360_75.jpg<br></p>
+        <p>keypoint: [0.3076171875, 0.5299479166666666]<br></p>
+        <p>bbox: [0.15234375, 0.3222222328186035, 0.4140625, 0.7749999761581421]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.181640625, 0.205078125, 0.27734375, 0.919921875]_taskonomy_silerton_point_784_view_4_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1L4_OMjV92HrHHkA9NWDBrc2uNGqXD-9b">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_silerton_point_784_view_4_domain_rgb.png<br></p>
+        <p>keypoint: [0.2265625, 0.546875]<br></p>
+        <p>bbox: [0.181640625, 0.205078125, 0.27734375, 0.919921875]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.326171875, 0.0625, 0.474609375, 0.25]_taskonomy_sagerton_point_277_view_2_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1sdFDkB5HBZNrj_52NaiYG9iNsc_3sHD9">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_sagerton_point_277_view_2_domain_rgb.png<br></p>
+        <p>keypoint: [0.412109375, 0.15364583333333334]<br></p>
+        <p>bbox: [0.326171875, 0.0625, 0.474609375, 0.25]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.71875, 0.302734375, 0.7578125, 0.41015625]_taskonomy_moberly_point_136_view_0_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1F-Rs4ivmBeHwDDh0xavH0g8B-1gkpB4a">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_moberly_point_136_view_0_domain_rgb.png<br></p>
+        <p>keypoint: [0.73828125, 0.35546875]<br></p>
+        <p>bbox: [0.71875, 0.302734375, 0.7578125, 0.41015625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.14947916666666666, 0.2712962962962963, 0.34322916666666664, 0.512962962962963]_EK_0112_P02_12_frame_0000035645.jpg" src="https://drive.google.com/uc?export=view&amp;id=1n6uHMJa460ezWlj82HxrFv_DOkG8jMSJ">
+      </div>
+      <div class="info-container">
+        <p>img_name: EK_0112_P02_12_frame_0000035645.jpg<br></p>
+        <p>keypoint: [0.259765625, 0.3997395833333333]<br></p>
+        <p>bbox: [0.14947916567325592, 0.27129629254341125, 0.34322917461395264, 0.5129629373550415]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.34765625, 0.5234375, 0.404296875, 0.556640625]_taskonomy_cashel_point_635_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1CXVOvQVj432C65oxxCh6P2-1oT5F4SdM">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_cashel_point_635_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.37890625, 0.54296875]<br></p>
+        <p>bbox: [0.34765625, 0.5234375, 0.404296875, 0.556640625]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.1328125, 0.1983695652173913, 0.3296875, 0.4945652173913043]_AR_b_KLhKET2d4_2_630_85.jpg" src="https://drive.google.com/uc?export=view&amp;id=1IVBqXFpsQHzBqHiB689BNvU3uexsRAh1">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_b_KLhKET2d4_2_630_85.jpg<br></p>
+        <p>keypoint: [0.2109375, 0.3385416666666667]<br></p>
+        <p>bbox: [0.1328125, 0.198369562625885, 0.3296875059604645, 0.4945652186870575]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 0<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: -100<br></p>
+        <p>kinematic: 1<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: no<br></p>
+        <p>kinematic: n/a<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free movement<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.37890625, 0.869140625, 0.517578125, 1.0]_taskonomy_yadkinville_point_317_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1XSNq_h4NJvKUIp3hf9NifmJHfo9q99f4">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_yadkinville_point_317_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.4453125, 0.9427083333333334]<br></p>
+        <p>bbox: [0.37890625, 0.869140625, 0.517578125, 1.0]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.49609375, 0.89453125, 0.61328125, 1.0]_taskonomy_macksville_point_1318_view_6_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1p3JTe1DyPYibGRa3cuhnXfmzXQVKURk4">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_macksville_point_1318_view_6_domain_rgb.png<br></p>
+        <p>keypoint: [0.56640625, 0.9700520833333334]<br></p>
+        <p>bbox: [0.49609375, 0.89453125, 0.61328125, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 2<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.1015625, 0.091796875, 0.1484375, 0.18359375]_taskonomy_macedon_point_1748_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1XDyrFDLwB7g3d7IVXYN2zquyXiWHj_Sy">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_macedon_point_1748_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.126953125, 0.13802083333333334]<br></p>
+        <p>bbox: [0.1015625, 0.091796875, 0.1484375, 0.18359375]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.18515625, 0.0, 0.2484375, 0.42777777777777776]_AR_5TIdXgaCScA_2_0_55.jpg" src="https://drive.google.com/uc?export=view&amp;id=19e4QM3qYWS-ksAwydICCC_-q9yNYogxG">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_5TIdXgaCScA_2_0_55.jpg<br></p>
+        <p>keypoint: [0.240234375, 0.16927083333333334]<br></p>
+        <p>bbox: [0.18515625596046448, 0.0, 0.24843749403953552, 0.4277777671813965]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 0<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.607421875, 0.5078125, 0.6875, 0.666015625]_taskonomy_shauck_point_735_view_6_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1B9tHHBCXl1QFWzdBXiqU96ciAgS7JkJ-">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_shauck_point_735_view_6_domain_rgb.png<br></p>
+        <p>keypoint: [0.642578125, 0.5755208333333334]<br></p>
+        <p>bbox: [0.607421875, 0.5078125, 0.6875, 0.666015625]<br></p>
+        <p>movable_gt: 1<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: two_hands<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.51953125, 0.25390625, 0.568359375, 0.392578125]_taskonomy_ribera_point_184_view_6_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1WLc2vhauw6pDKuyqUbBARbX1DRSrXgn1">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_ribera_point_184_view_6_domain_rgb.png<br></p>
+        <p>keypoint: [0.546875, 0.3216145833333333]<br></p>
+        <p>bbox: [0.51953125, 0.25390625, 0.568359375, 0.392578125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.1578125, 0.40694444444444444, 0.334375, 0.8486111111111111]_AR_oymXkJQjfkw_31_270_25.jpg" src="https://drive.google.com/uc?export=view&amp;id=1HM3v6ZRu6DptV2NtQI3E7fSI36cb1_dx">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_oymXkJQjfkw_31_270_25.jpg<br></p>
+        <p>keypoint: [0.2578125, 0.5859375]<br></p>
+        <p>bbox: [0.15781250596046448, 0.4069444537162781, 0.3343749940395355, 0.8486111164093018]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.48359375, 0.5847222222222223, 0.9421875, 1.0]_AR_K7OjwHt7QU4_24_1980_85.jpg" src="https://drive.google.com/uc?export=view&amp;id=1tqs_HxUbiwNUJ-5mVKzhxHVqwIJqQeWf">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_K7OjwHt7QU4_24_1980_85.jpg<br></p>
+        <p>keypoint: [0.703125, 0.8619791666666666]<br></p>
+        <p>bbox: [0.48359376192092896, 0.5847222208976746, 0.942187488079071, 1.0]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.296875, 0.67578125, 0.34765625, 0.755859375]_taskonomy_almota_point_888_view_14_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1eJt4Z6YjBHcKc8JO7Gj3KwcQtXJ8iFPL">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_almota_point_888_view_14_domain_rgb.png<br></p>
+        <p>keypoint: [0.326171875, 0.7161458333333334]<br></p>
+        <p>bbox: [0.296875, 0.67578125, 0.34765625, 0.755859375]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 0<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 0<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: freeform<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: free<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.61796875, 0.2916666666666667, 0.66953125, 0.6680555555555555]_AR_O0s9siTI65c_21_1260_35.jpg" src="https://drive.google.com/uc?export=view&amp;id=1N91WuL588TID7NUJ23fcMgfFaXHQAV3u">
+      </div>
+      <div class="info-container">
+        <p>img_name: AR_O0s9siTI65c_21_1260_35.jpg<br></p>
+        <p>keypoint: [0.638671875, 0.4817708333333333]<br></p>
+        <p>bbox: [0.617968738079071, 0.2916666567325592, 0.6695312261581421, 0.668055534362793]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <img alt="[0.015625, 0.470703125, 0.060546875, 0.814453125]_taskonomy_hordville_point_1032_view_1_domain_rgb.png" src="https://drive.google.com/uc?export=view&amp;id=1KOI8zWVlvG10rSJRc-ZSe4pVVbZJa_Pn">
+      </div>
+      <div class="info-container">
+        <p>img_name: taskonomy_hordville_point_1032_view_1_domain_rgb.png<br></p>
+        <p>keypoint: [0.037109375, 0.625]<br></p>
+        <p>bbox: [0.015625, 0.470703125, 0.060546875, 0.814453125]<br></p>
+        <p>movable_gt: 0<br></p>
+        <p>movable: 2<br></p>
+        <p>rigid_gt: 1<br></p>
+        <p>rigid: 1<br></p>
+        <p>kinematic_gt: 1<br></p>
+        <p>kinematic: 2<br></p>
+        <p>interaction_type_gt: 1<br></p>
+        <p>interaction_type: 1<br></p>
+      </div>
+      <div class="info-container">
+        <p>rigid: yes<br></p>
+        <p>kinematic: rotation<br></p>
+        <p>movable: one_hand<br></p>
+        <p>pull_or_push: pull<br></p>
+      </div>
+    </div>
+  </body>
+</html>
