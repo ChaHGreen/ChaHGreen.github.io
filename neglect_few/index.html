@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Visualization</title>
+    <style>
+    img {
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+        border: 1px solid #ccc;
+    }
+    .image-container {
+        width: 50%; /* 两列布局，每列占50% */
+        flex: none;
+    }
+    .info-container {
+        width: 50%; /* 两列布局，每列占50% */
+        padding-left: 20px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    .info-below-image {
+        padding-top: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.2171875, 0.25277777777777777, 0.7328125, 0.5638888888888889]_AR_49zy2M9cNPE_1_1800_75.jpg" src="images/[0.2171875, 0.25277777777777777, 0.7328125, 0.5638888888888889]_AR_49zy2M9cNPE_1_1800_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.23203125, 0.4388888888888889, 0.7234375, 0.8444444444444444]_AR_49zy2M9cNPE_1_1800_75.jpg" src="images/[0.23203125, 0.4388888888888889, 0.7234375, 0.8444444444444444]_AR_49zy2M9cNPE_1_1800_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.25625, 0.7819444444444444, 0.71953125, 1.0]_AR_49zy2M9cNPE_1_1800_75.jpg" src="images/[0.25625, 0.7819444444444444, 0.71953125, 1.0]_AR_49zy2M9cNPE_1_1800_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.2390625, 0.0, 0.71640625, 0.2986111111111111]_AR_49zy2M9cNPE_3_1620_35.jpg" src="images/[0.2390625, 0.0, 0.71640625, 0.2986111111111111]_AR_49zy2M9cNPE_3_1620_35.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.26328125, 0.2152777777777778, 0.64375, 0.5902777777777778]_AR_49zy2M9cNPE_3_1620_35.jpg" src="images/[0.26328125, 0.2152777777777778, 0.64375, 0.5902777777777778]_AR_49zy2M9cNPE_3_1620_35.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.31796875, 0.4361111111111111, 0.71171875, 0.85]_AR_49zy2M9cNPE_3_1620_35.jpg" src="images/[0.31796875, 0.4361111111111111, 0.71171875, 0.85]_AR_49zy2M9cNPE_3_1620_35.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.4765625, 0.16944444444444445, 0.8453125, 0.2708333333333333]_AR_49zy2M9cNPE_3_990_35.jpg" src="images/[0.4765625, 0.16944444444444445, 0.8453125, 0.2708333333333333]_AR_49zy2M9cNPE_3_990_35.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.80625, 0.5305555555555556, 0.86640625, 0.6194444444444445]_AR_8Ow1OD6p1oM_42_900_75.jpg" src="images/[0.80625, 0.5305555555555556, 0.86640625, 0.6194444444444445]_AR_8Ow1OD6p1oM_42_900_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.25, 0.0, 0.91171875, 1.0]_AR_F0cmxRmoYIA_61_720_35.jpg" src="images/[0.25, 0.0, 0.91171875, 1.0]_AR_F0cmxRmoYIA_61_720_35.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.29791666666666666, 0.5255681818181818, 0.6895833333333333, 0.875]_AR_FOT4NtyzXQI_1_990_45.jpg" src="images/[0.29791666666666666, 0.5255681818181818, 0.6895833333333333, 0.875]_AR_FOT4NtyzXQI_1_990_45.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.5984375, 0.05416666666666667, 0.91328125, 0.225]_AR_FVLiScUBuoE_54_2520_65.jpg" src="images/[0.5984375, 0.05416666666666667, 0.91328125, 0.225]_AR_FVLiScUBuoE_54_2520_65.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.5875, 0.23333333333333334, 0.9, 0.4263888888888889]_AR_FVLiScUBuoE_54_2520_65.jpg" src="images/[0.5875, 0.23333333333333334, 0.9, 0.4263888888888889]_AR_FVLiScUBuoE_54_2520_65.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.21328125, 0.45416666666666666, 0.66484375, 0.75]_AR_Fh8Gog8sZME_2_8190_75.jpg" src="images/[0.21328125, 0.45416666666666666, 0.66484375, 0.75]_AR_Fh8Gog8sZME_2_8190_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.80625, 0.45694444444444443, 0.86328125, 0.5097222222222222]_AR_I2p01BnvII4_2_1260_15.jpg" src="images/[0.80625, 0.45694444444444443, 0.86328125, 0.5097222222222222]_AR_I2p01BnvII4_2_1260_15.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.24453125, 0.002777777777777778, 0.39921875, 1.0]_AR_K_1ccMkxPEQ_111_3870_75.jpg" src="images/[0.24453125, 0.002777777777777778, 0.39921875, 1.0]_AR_K_1ccMkxPEQ_111_3870_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0, 0.03888888888888889, 0.09375, 0.5486111111111112]_AR_QBJ5rehOMEk_7_8370_45.jpg" src="images/[0.0, 0.03888888888888889, 0.09375, 0.5486111111111112]_AR_QBJ5rehOMEk_7_8370_45.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.4984375, 0.5972222222222222, 0.84140625, 1.0]_AR_WguV_kuKLxg_34_0_55.jpg" src="images/[0.4984375, 0.5972222222222222, 0.84140625, 1.0]_AR_WguV_kuKLxg_34_0_55.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.70234375, 0.0, 1.0, 0.3680555555555556]_AR_WxxOtXTiDUY_5_1710_45.jpg" src="images/[0.70234375, 0.0, 1.0, 0.3680555555555556]_AR_WxxOtXTiDUY_5_1710_45.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.020833333333333332, 0.45652173913043476, 0.36666666666666664, 0.5733695652173914]_AR_YylDaKB9O_Q_2_2790_35.jpg" src="images/[0.020833333333333332, 0.45652173913043476, 0.36666666666666664, 0.5733695652173914]_AR_YylDaKB9O_Q_2_2790_35.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.01875, 0.37228260869565216, 0.37083333333333335, 0.48641304347826086]_AR_YylDaKB9O_Q_2_3060_45.jpg" src="images/[0.01875, 0.37228260869565216, 0.37083333333333335, 0.48641304347826086]_AR_YylDaKB9O_Q_2_3060_45.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.1265625, 0.3388888888888889, 0.34453125, 0.375]_AR_ZraKVBUbxGA_7_990_55.jpg" src="images/[0.1265625, 0.3388888888888889, 0.34453125, 0.375]_AR_ZraKVBUbxGA_7_990_55.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.165625, 0.8013888888888889, 0.48671875, 1.0]_AR_ZraKVBUbxGA_7_990_55.jpg" src="images/[0.165625, 0.8013888888888889, 0.48671875, 1.0]_AR_ZraKVBUbxGA_7_990_55.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.18671875, 0.6402777777777777, 0.22421875, 0.7097222222222223]_AR_ZyoRugjfKEo_214_270_25.jpg" src="images/[0.18671875, 0.6402777777777777, 0.22421875, 0.7097222222222223]_AR_ZyoRugjfKEo_214_270_25.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0125, 0.6305555555555555, 0.11640625, 0.7236111111111111]_AR_ZyoRugjfKEo_214_270_35.jpg" src="images/[0.0125, 0.6305555555555555, 0.11640625, 0.7236111111111111]_AR_ZyoRugjfKEo_214_270_35.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: no<br></p>
+          <p>kinematic: n/a<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.3484375, 0.425, 0.50859375, 0.6555555555555556]_AR__fkhRUP49U0_0_7920_45.jpg" src="images/[0.3484375, 0.425, 0.50859375, 0.6555555555555556]_AR__fkhRUP49U0_0_7920_45.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0265625, 0.48055555555555557, 0.9734375, 0.9611111111111111]_AR__ngYEjHHcx0_9_0_5.jpg" src="images/[0.0265625, 0.48055555555555557, 0.9734375, 0.9611111111111111]_AR__ngYEjHHcx0_9_0_5.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0, 0.2833333333333333, 0.18359375, 0.41805555555555557]_AR__racufhvdsA_92_720_35.jpg" src="images/[0.0, 0.2833333333333333, 0.18359375, 0.41805555555555557]_AR__racufhvdsA_92_720_35.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.015625, 0.43194444444444446, 0.86015625, 1.0]_AR_bTBnBBCi6VI_5_7380_65.jpg" src="images/[0.015625, 0.43194444444444446, 0.86015625, 1.0]_AR_bTBnBBCi6VI_5_7380_65.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.3359375, 0.7222222222222222, 0.665625, 1.0]_AR_cgXfgH79Aew_1_450_15.jpg" src="images/[0.3359375, 0.7222222222222222, 0.665625, 1.0]_AR_cgXfgH79Aew_1_450_15.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.39453125, 0.5416666666666666, 0.52578125, 0.9291666666666667]_AR_kp33ZprO0Ck_9_0_75.jpg" src="images/[0.39453125, 0.5416666666666666, 0.52578125, 0.9291666666666667]_AR_kp33ZprO0Ck_9_0_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.03203125, 0.027777777777777776, 0.4484375, 0.6013888888888889]_AR_q3z7Lm3mR3Y_0_1530_75.jpg" src="images/[0.03203125, 0.027777777777777776, 0.4484375, 0.6013888888888889]_AR_q3z7Lm3mR3Y_0_1530_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.2015625, 0.01358695652173913, 0.8640625, 0.3804347826086957]_AR_r2PK_w7aWDk_8_180_25.jpg" src="images/[0.2015625, 0.01358695652173913, 0.8640625, 0.3804347826086957]_AR_r2PK_w7aWDk_8_180_25.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0140625, 0.6111111111111112, 0.85390625, 1.0]_AR_tgToln4LlT8_51_810_75.jpg" src="images/[0.0140625, 0.6111111111111112, 0.85390625, 1.0]_AR_tgToln4LlT8_51_810_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.50625, 0.6763888888888889, 0.75859375, 0.8861111111111111]_AR_tiIpbYl7udM_0_450_55.jpg" src="images/[0.50625, 0.6763888888888889, 0.75859375, 0.8861111111111111]_AR_tiIpbYl7udM_0_450_55.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.01015625, 0.18611111111111112, 0.3625, 1.0]_AR_ti__rePA0JM_18_270_75.jpg" src="images/[0.01015625, 0.18611111111111112, 0.3625, 1.0]_AR_ti__rePA0JM_18_270_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.02890625, 0.14722222222222223, 0.36875, 0.9666666666666667]_AR_ti__rePA0JM_18_270_85.jpg" src="images/[0.02890625, 0.14722222222222223, 0.36875, 0.9666666666666667]_AR_ti__rePA0JM_18_270_85.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.109375, 0.3972222222222222, 0.7125, 0.8652777777777778]_AR_v_Ud67iZ8DE_12_450_25.jpg" src="images/[0.109375, 0.3972222222222222, 0.7125, 0.8652777777777778]_AR_v_Ud67iZ8DE_12_450_25.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.15390625, 0.3263888888888889, 0.509375, 0.5902777777777778]_AR_vpXzSbs_Dlo_0_6120_85.jpg" src="images/[0.15390625, 0.3263888888888889, 0.509375, 0.5902777777777778]_AR_vpXzSbs_Dlo_0_6120_85.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.33984375, 0.6222222222222222, 0.58203125, 0.8763888888888889]_AR_xKpIuWhDzLY_13_810_35.jpg" src="images/[0.33984375, 0.6222222222222222, 0.58203125, 0.8763888888888889]_AR_xKpIuWhDzLY_13_810_35.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.3359375, 0.6138888888888889, 0.575, 0.8708333333333333]_AR_xKpIuWhDzLY_13_810_75.jpg" src="images/[0.3359375, 0.6138888888888889, 0.575, 0.8708333333333333]_AR_xKpIuWhDzLY_13_810_75.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.1515625, 0.17222222222222222, 0.39947916666666666, 0.5638888888888889]_EK_0002_P06_101_frame_0000037432.jpg" src="images/[0.1515625, 0.17222222222222222, 0.39947916666666666, 0.5638888888888889]_EK_0002_P06_101_frame_0000037432.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.23489583333333333, 0.24074074074074073, 0.453125, 0.6203703703703703]_EK_0005_P01_103_frame_0000003586.jpg" src="images/[0.23489583333333333, 0.24074074074074073, 0.453125, 0.6203703703703703]_EK_0005_P01_103_frame_0000003586.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.14010416666666667, 0.09074074074074075, 0.2640625, 0.29907407407407405]_EK_0013_P02_135_frame_0000002926.jpg" src="images/[0.14010416666666667, 0.09074074074074075, 0.2640625, 0.29907407407407405]_EK_0013_P02_135_frame_0000002926.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.6135416666666667, 0.30092592592592593, 0.8541666666666666, 0.7546296296296297]_EK_0013_P02_135_frame_0000006600.jpg" src="images/[0.6135416666666667, 0.30092592592592593, 0.8541666666666666, 0.7546296296296297]_EK_0013_P02_135_frame_0000006600.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0, 0.0, 1.0, 0.4638888888888889]_EK_0032_P22_117_frame_0000009682.jpg" src="images/[0.0, 0.0, 1.0, 0.4638888888888889]_EK_0032_P22_117_frame_0000009682.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0, 0.29074074074074074, 0.21614583333333334, 0.5185185185185185]_EK_0047_P35_105_frame_0000039603.jpg" src="images/[0.0, 0.29074074074074074, 0.21614583333333334, 0.5185185185185185]_EK_0047_P35_105_frame_0000039603.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.5567708333333333, 0.2564814814814815, 0.7567708333333333, 0.6064814814814815]_EK_0049_P02_128_frame_0000002938.jpg" src="images/[0.5567708333333333, 0.2564814814814815, 0.7567708333333333, 0.6064814814814815]_EK_0049_P02_128_frame_0000002938.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.6390625, 0.675, 0.7848958333333333, 0.9981481481481481]_EK_0057_P06_102_frame_0000012355.jpg" src="images/[0.6390625, 0.675, 0.7848958333333333, 0.9981481481481481]_EK_0057_P06_102_frame_0000012355.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.31197916666666664, 0.2759259259259259, 0.37864583333333335, 0.7027777777777777]_EK_0095_P07_08_frame_0000003348.jpg" src="images/[0.31197916666666664, 0.2759259259259259, 0.37864583333333335, 0.7027777777777777]_EK_0095_P07_08_frame_0000003348.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.5348958333333333, 0.41574074074074074, 0.9098958333333333, 1.0]_EK_0096_P08_21_frame_0000013787.jpg" src="images/[0.5348958333333333, 0.41574074074074074, 0.9098958333333333, 1.0]_EK_0096_P08_21_frame_0000013787.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.09635416666666667, 0.6185185185185185, 0.4609375, 1.0]_EK_0096_P08_21_frame_0000013787.jpg" src="images/[0.09635416666666667, 0.6185185185185185, 0.4609375, 1.0]_EK_0096_P08_21_frame_0000013787.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.3807291666666667, 0.2675925925925926, 0.628125, 0.6898148148148148]_EK_0096_P08_21_frame_0000013787.jpg" src="images/[0.3807291666666667, 0.2675925925925926, 0.628125, 0.6898148148148148]_EK_0096_P08_21_frame_0000013787.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.5364583333333334, 0.8185185185185185, 0.9109375, 1.0]_EK_0096_P08_21_frame_0000026553.jpg" src="images/[0.5364583333333334, 0.8185185185185185, 0.9109375, 1.0]_EK_0096_P08_21_frame_0000026553.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.8776041666666666, 0.10092592592592593, 1.0, 0.41574074074074074]_EK_0098_P10_04_frame_0000080868.jpg" src="images/[0.8776041666666666, 0.10092592592592593, 1.0, 0.41574074074074074]_EK_0098_P10_04_frame_0000080868.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.6125, 0.0, 1.0, 0.3787037037037037]_EK_0129_P08_17_frame_0000003681.jpg" src="images/[0.6125, 0.0, 1.0, 0.3787037037037037]_EK_0129_P08_17_frame_0000003681.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.15520833333333334, 0.8083333333333333, 0.5395833333333333, 1.0]_EK_0129_P08_17_frame_0000003929.jpg" src="images/[0.15520833333333334, 0.8083333333333333, 0.5395833333333333, 1.0]_EK_0129_P08_17_frame_0000003929.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.4875, 0.27685185185185185, 0.5322916666666667, 0.4842592592592593]_EK_0138_P23_05_frame_0000049421.jpg" src="images/[0.4875, 0.27685185185185185, 0.5322916666666667, 0.4842592592592593]_EK_0138_P23_05_frame_0000049421.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.36666666666666664, 0.4064814814814815, 0.6385416666666667, 0.7453703703703703]_EK_0139_P24_09_frame_0000059335.jpg" src="images/[0.36666666666666664, 0.4064814814814815, 0.6385416666666667, 0.7453703703703703]_EK_0139_P24_09_frame_0000059335.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.14947916666666666, 0.11203703703703703, 0.3145833333333333, 0.39351851851851855]_EK_0150_P30_05_frame_0000188474.jpg" src="images/[0.14947916666666666, 0.11203703703703703, 0.3145833333333333, 0.39351851851851855]_EK_0150_P30_05_frame_0000188474.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.21875, 0.3671875, 0.259765625, 0.646484375]_taskonomy_aldrich_point_1417_view_6_domain_rgb.png" src="images/[0.21875, 0.3671875, 0.259765625, 0.646484375]_taskonomy_aldrich_point_1417_view_6_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.783203125, 0.376953125, 0.83203125, 0.51953125]_taskonomy_aldrich_point_1440_view_1_domain_rgb.png" src="images/[0.783203125, 0.376953125, 0.83203125, 0.51953125]_taskonomy_aldrich_point_1440_view_1_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.119140625, 0.5078125, 0.19921875, 0.546875]_taskonomy_allensville_point_191_view_3_domain_rgb.png" src="images/[0.119140625, 0.5078125, 0.19921875, 0.546875]_taskonomy_allensville_point_191_view_3_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.123046875, 0.548828125, 0.203125, 0.703125]_taskonomy_allensville_point_191_view_3_domain_rgb.png" src="images/[0.123046875, 0.548828125, 0.203125, 0.703125]_taskonomy_allensville_point_191_view_3_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.302734375, 0.119140625, 0.439453125, 0.548828125]_taskonomy_allensville_point_383_view_3_domain_rgb.png" src="images/[0.302734375, 0.119140625, 0.439453125, 0.548828125]_taskonomy_allensville_point_383_view_3_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0, 0.46484375, 0.248046875, 0.63671875]_taskonomy_anaheim_point_155_view_2_domain_rgb.png" src="images/[0.0, 0.46484375, 0.248046875, 0.63671875]_taskonomy_anaheim_point_155_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.04296875, 0.580078125, 0.25, 0.77734375]_taskonomy_anaheim_point_155_view_2_domain_rgb.png" src="images/[0.04296875, 0.580078125, 0.25, 0.77734375]_taskonomy_anaheim_point_155_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.244140625, 0.583984375, 0.384765625, 0.75390625]_taskonomy_applewold_point_44_view_9_domain_rgb.png" src="images/[0.244140625, 0.583984375, 0.384765625, 0.75390625]_taskonomy_applewold_point_44_view_9_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.73046875, 0.40234375, 0.978515625, 0.55078125]_taskonomy_azusa_point_185_view_8_domain_rgb.png" src="images/[0.73046875, 0.40234375, 0.978515625, 0.55078125]_taskonomy_azusa_point_185_view_8_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.4375, 0.3984375, 0.689453125, 0.544921875]_taskonomy_azusa_point_185_view_8_domain_rgb.png" src="images/[0.4375, 0.3984375, 0.689453125, 0.544921875]_taskonomy_azusa_point_185_view_8_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.4609375, 0.412109375, 0.537109375, 0.453125]_taskonomy_azusa_point_391_view_0_domain_rgb.png" src="images/[0.4609375, 0.412109375, 0.537109375, 0.453125]_taskonomy_azusa_point_391_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.708984375, 0.76171875, 0.908203125, 0.876953125]_taskonomy_azusa_point_412_view_2_domain_rgb.png" src="images/[0.708984375, 0.76171875, 0.908203125, 0.876953125]_taskonomy_azusa_point_412_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.67578125, 0.55859375, 0.765625, 0.8515625]_taskonomy_ballou_point_103_view_2_domain_rgb.png" src="images/[0.67578125, 0.55859375, 0.765625, 0.8515625]_taskonomy_ballou_point_103_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.537109375, 0.376953125, 0.791015625, 1.0]_taskonomy_bellwood_point_257_view_6_domain_rgb.png" src="images/[0.537109375, 0.376953125, 0.791015625, 1.0]_taskonomy_bellwood_point_257_view_6_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.275390625, 0.0, 0.724609375, 0.435546875]_taskonomy_benevolence_point_80_view_6_domain_rgb.png" src="images/[0.275390625, 0.0, 0.724609375, 0.435546875]_taskonomy_benevolence_point_80_view_6_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: no<br></p>
+          <p>kinematic: n/a<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.59375, 0.52734375, 0.74609375, 0.7578125]_taskonomy_bonesteel_point_135_view_0_domain_rgb.png" src="images/[0.59375, 0.52734375, 0.74609375, 0.7578125]_taskonomy_bonesteel_point_135_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.3203125, 0.76171875, 0.595703125, 0.830078125]_taskonomy_bountiful_point_642_view_0_domain_rgb.png" src="images/[0.3203125, 0.76171875, 0.595703125, 0.830078125]_taskonomy_bountiful_point_642_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.3125, 0.826171875, 0.59765625, 0.90234375]_taskonomy_bountiful_point_642_view_0_domain_rgb.png" src="images/[0.3125, 0.826171875, 0.59765625, 0.90234375]_taskonomy_bountiful_point_642_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.306640625, 0.8984375, 0.599609375, 0.978515625]_taskonomy_bountiful_point_642_view_0_domain_rgb.png" src="images/[0.306640625, 0.8984375, 0.599609375, 0.978515625]_taskonomy_bountiful_point_642_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.904296875, 0.279296875, 0.97265625, 0.38671875]_taskonomy_braxton_point_222_view_2_domain_rgb.png" src="images/[0.904296875, 0.279296875, 0.97265625, 0.38671875]_taskonomy_braxton_point_222_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.576171875, 0.40625, 0.646484375, 0.58984375]_taskonomy_carpendale_point_1095_view_8_domain_rgb.png" src="images/[0.576171875, 0.40625, 0.646484375, 0.58984375]_taskonomy_carpendale_point_1095_view_8_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.45703125, 0.703125, 0.529296875, 0.767578125]_taskonomy_cason_point_112_view_2_domain_rgb.png" src="images/[0.45703125, 0.703125, 0.529296875, 0.767578125]_taskonomy_cason_point_112_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.388671875, 0.537109375, 0.490234375, 0.630859375]_taskonomy_cason_point_72_view_3_domain_rgb.png" src="images/[0.388671875, 0.537109375, 0.490234375, 0.630859375]_taskonomy_cason_point_72_view_3_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.251953125, 0.42578125, 0.412109375, 0.66015625]_taskonomy_castroville_point_293_view_2_domain_rgb.png" src="images/[0.251953125, 0.42578125, 0.412109375, 0.66015625]_taskonomy_castroville_point_293_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: no<br></p>
+          <p>kinematic: n/a<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.849609375, 0.251953125, 0.998046875, 0.568359375]_taskonomy_castroville_point_443_view_4_domain_rgb.png" src="images/[0.849609375, 0.251953125, 0.998046875, 0.568359375]_taskonomy_castroville_point_443_view_4_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: no<br></p>
+          <p>kinematic: n/a<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.75390625, 0.685546875, 1.0, 1.0]_taskonomy_chilhowie_point_449_view_7_domain_rgb.png" src="images/[0.75390625, 0.685546875, 1.0, 1.0]_taskonomy_chilhowie_point_449_view_7_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.1328125, 0.76171875, 0.328125, 0.8828125]_taskonomy_chilhowie_point_477_view_3_domain_rgb.png" src="images/[0.1328125, 0.76171875, 0.328125, 0.8828125]_taskonomy_chilhowie_point_477_view_3_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.00390625, 0.359375, 0.23828125, 1.0]_taskonomy_chilhowie_point_90_view_2_domain_rgb.png" src="images/[0.00390625, 0.359375, 0.23828125, 1.0]_taskonomy_chilhowie_point_90_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.45703125, 0.47265625, 0.546875, 0.892578125]_taskonomy_churchton_point_512_view_2_domain_rgb.png" src="images/[0.45703125, 0.47265625, 0.546875, 0.892578125]_taskonomy_churchton_point_512_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: no<br></p>
+          <p>kinematic: n/a<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.806640625, 0.46875, 0.919921875, 0.943359375]_taskonomy_churchton_point_512_view_2_domain_rgb.png" src="images/[0.806640625, 0.46875, 0.919921875, 0.943359375]_taskonomy_churchton_point_512_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: no<br></p>
+          <p>kinematic: n/a<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.693359375, 0.904296875, 0.80859375, 0.9453125]_taskonomy_clarkridge_point_5_view_7_domain_rgb.png" src="images/[0.693359375, 0.904296875, 0.80859375, 0.9453125]_taskonomy_clarkridge_point_5_view_7_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.69921875, 0.947265625, 0.8125, 0.990234375]_taskonomy_clarkridge_point_5_view_7_domain_rgb.png" src="images/[0.69921875, 0.947265625, 0.8125, 0.990234375]_taskonomy_clarkridge_point_5_view_7_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.3125, 0.490234375, 0.396484375, 0.62890625]_taskonomy_corder_point_42_view_3_domain_rgb.png" src="images/[0.3125, 0.490234375, 0.396484375, 0.62890625]_taskonomy_corder_point_42_view_3_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.4609375, 0.6328125, 0.513671875, 0.712890625]_taskonomy_corder_point_88_view_1_domain_rgb.png" src="images/[0.4609375, 0.6328125, 0.513671875, 0.712890625]_taskonomy_corder_point_88_view_1_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.64453125, 0.0390625, 1.0, 1.0]_taskonomy_creede_point_333_view_2_domain_rgb.png" src="images/[0.64453125, 0.0390625, 1.0, 1.0]_taskonomy_creede_point_333_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.5078125, 0.48046875, 0.587890625, 0.546875]_taskonomy_creede_point_441_view_11_domain_rgb.png" src="images/[0.5078125, 0.48046875, 0.587890625, 0.546875]_taskonomy_creede_point_441_view_11_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.591796875, 0.46875, 0.83984375, 0.595703125]_taskonomy_forkland_point_14_view_2_domain_rgb.png" src="images/[0.591796875, 0.46875, 0.83984375, 0.595703125]_taskonomy_forkland_point_14_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.833984375, 0.431640625, 0.98828125, 0.5234375]_taskonomy_forkland_point_14_view_2_domain_rgb.png" src="images/[0.833984375, 0.431640625, 0.98828125, 0.5234375]_taskonomy_forkland_point_14_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.583984375, 0.70703125, 0.953125, 1.0]_taskonomy_forkland_point_14_view_2_domain_rgb.png" src="images/[0.583984375, 0.70703125, 0.953125, 1.0]_taskonomy_forkland_point_14_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.25, 0.4296875, 0.4609375, 1.0]_taskonomy_gilbert_point_80_view_7_domain_rgb.png" src="images/[0.25, 0.4296875, 0.4609375, 1.0]_taskonomy_gilbert_point_80_view_7_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.462890625, 0.3671875, 0.53125, 0.7890625]_taskonomy_globe_point_1163_view_4_domain_rgb.png" src="images/[0.462890625, 0.3671875, 0.53125, 0.7890625]_taskonomy_globe_point_1163_view_4_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0, 0.125, 0.25390625, 0.634765625]_taskonomy_globe_point_389_view_0_domain_rgb.png" src="images/[0.0, 0.125, 0.25390625, 0.634765625]_taskonomy_globe_point_389_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: no<br></p>
+          <p>kinematic: n/a<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.29296875, 0.0, 0.3671875, 0.189453125]_taskonomy_globe_point_60_view_4_domain_rgb.png" src="images/[0.29296875, 0.0, 0.3671875, 0.189453125]_taskonomy_globe_point_60_view_4_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.609375, 0.14453125, 0.77734375, 0.314453125]_taskonomy_gloria_point_126_view_4_domain_rgb.png" src="images/[0.609375, 0.14453125, 0.77734375, 0.314453125]_taskonomy_gloria_point_126_view_4_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.384765625, 0.1484375, 0.587890625, 0.25]_taskonomy_gloria_point_200_view_4_domain_rgb.png" src="images/[0.384765625, 0.1484375, 0.587890625, 0.25]_taskonomy_gloria_point_200_view_4_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.7890625, 0.2109375, 0.88671875, 0.359375]_taskonomy_gloria_point_200_view_4_domain_rgb.png" src="images/[0.7890625, 0.2109375, 0.88671875, 0.359375]_taskonomy_gloria_point_200_view_4_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.001953125, 0.796875, 0.33984375, 1.0]_taskonomy_goffs_point_1069_view_3_domain_rgb.png" src="images/[0.001953125, 0.796875, 0.33984375, 1.0]_taskonomy_goffs_point_1069_view_3_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.8984375, 0.380859375, 1.0, 0.76171875]_taskonomy_goodyear_point_998_view_4_domain_rgb.png" src="images/[0.8984375, 0.380859375, 1.0, 0.76171875]_taskonomy_goodyear_point_998_view_4_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.70703125, 0.5, 1.0, 1.0]_taskonomy_highspire_point_1075_view_0_domain_rgb.png" src="images/[0.70703125, 0.5, 1.0, 1.0]_taskonomy_highspire_point_1075_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.236328125, 0.611328125, 0.58984375, 0.94140625]_taskonomy_hominy_point_216_view_3_domain_rgb.png" src="images/[0.236328125, 0.611328125, 0.58984375, 0.94140625]_taskonomy_hominy_point_216_view_3_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.03125, 0.650390625, 0.1875, 0.984375]_taskonomy_jacobus_point_580_view_5_domain_rgb.png" src="images/[0.03125, 0.650390625, 0.1875, 0.984375]_taskonomy_jacobus_point_580_view_5_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.501953125, 0.251953125, 0.689453125, 0.603515625]_taskonomy_jacobus_point_731_view_2_domain_rgb.png" src="images/[0.501953125, 0.251953125, 0.689453125, 0.603515625]_taskonomy_jacobus_point_731_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.328125, 0.2421875, 0.509765625, 0.59765625]_taskonomy_jacobus_point_731_view_2_domain_rgb.png" src="images/[0.328125, 0.2421875, 0.509765625, 0.59765625]_taskonomy_jacobus_point_731_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.232421875, 0.734375, 0.4296875, 0.853515625]_taskonomy_lynxville_point_342_view_0_domain_rgb.png" src="images/[0.232421875, 0.734375, 0.4296875, 0.853515625]_taskonomy_lynxville_point_342_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.4296875, 0.78125, 0.73046875, 0.94921875]_taskonomy_lynxville_point_342_view_0_domain_rgb.png" src="images/[0.4296875, 0.78125, 0.73046875, 0.94921875]_taskonomy_lynxville_point_342_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.23046875, 0.796875, 0.42578125, 0.9453125]_taskonomy_lynxville_point_342_view_0_domain_rgb.png" src="images/[0.23046875, 0.796875, 0.42578125, 0.9453125]_taskonomy_lynxville_point_342_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.720703125, 0.216796875, 1.0, 0.4921875]_taskonomy_mesic_point_254_view_1_domain_rgb.png" src="images/[0.720703125, 0.216796875, 1.0, 0.4921875]_taskonomy_mesic_point_254_view_1_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.712890625, 0.46484375, 0.955078125, 0.84765625]_taskonomy_mesic_point_254_view_1_domain_rgb.png" src="images/[0.712890625, 0.46484375, 0.955078125, 0.84765625]_taskonomy_mesic_point_254_view_1_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.6640625, 0.25390625, 0.763671875, 0.42578125]_taskonomy_musicks_point_826_view_0_domain_rgb.png" src="images/[0.6640625, 0.25390625, 0.763671875, 0.42578125]_taskonomy_musicks_point_826_view_0_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.32421875, 0.2421875, 0.8203125, 0.52734375]_taskonomy_placida_point_408_view_3_domain_rgb.png" src="images/[0.32421875, 0.2421875, 0.8203125, 0.52734375]_taskonomy_placida_point_408_view_3_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.201171875, 0.79296875, 0.462890625, 0.9375]_taskonomy_quantico_point_551_view_5_domain_rgb.png" src="images/[0.201171875, 0.79296875, 0.462890625, 0.9375]_taskonomy_quantico_point_551_view_5_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.24609375, 0.5, 0.30078125, 0.6015625]_taskonomy_stokes_point_199_view_4_domain_rgb.png" src="images/[0.24609375, 0.5, 0.30078125, 0.6015625]_taskonomy_stokes_point_199_view_4_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.666015625, 0.181640625, 0.8828125, 1.0]_taskonomy_tomales_point_830_view_8_domain_rgb.png" src="images/[0.666015625, 0.181640625, 0.8828125, 1.0]_taskonomy_tomales_point_830_view_8_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: freeform<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.1640625, 0.44921875, 0.533203125, 0.833984375]_taskonomy_vails_point_348_view_2_domain_rgb.png" src="images/[0.1640625, 0.44921875, 0.533203125, 0.833984375]_taskonomy_vails_point_348_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.578125, 0.521484375, 0.775390625, 0.787109375]_taskonomy_vails_point_348_view_2_domain_rgb.png" src="images/[0.578125, 0.521484375, 0.775390625, 0.787109375]_taskonomy_vails_point_348_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.78125, 0.560546875, 0.923828125, 0.751953125]_taskonomy_vails_point_348_view_2_domain_rgb.png" src="images/[0.78125, 0.560546875, 0.923828125, 0.751953125]_taskonomy_vails_point_348_view_2_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.0, 0.404296875, 0.1171875, 0.759765625]_taskonomy_vails_point_364_view_11_domain_rgb.png" src="images/[0.0, 0.404296875, 0.1171875, 0.759765625]_taskonomy_vails_point_364_view_11_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.15625, 0.46484375, 0.294921875, 0.734375]_taskonomy_vails_point_364_view_11_domain_rgb.png" src="images/[0.15625, 0.46484375, 0.294921875, 0.734375]_taskonomy_vails_point_364_view_11_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.775390625, 0.501953125, 0.8046875, 0.65234375]_taskonomy_vails_point_452_view_12_domain_rgb.png" src="images/[0.775390625, 0.501953125, 0.8046875, 0.65234375]_taskonomy_vails_point_452_view_12_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: push<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.3536458333333333, 0.3685185185185185, 0.7338541666666667, 0.7157407407407408]_EK_0073_P01_09_frame_0000104057.jpg" src="images/[0.3536458333333333, 0.3685185185185185, 0.7338541666666667, 0.7157407407407408]_EK_0073_P01_09_frame_0000104057.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: rotation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.35052083333333334, 0.0, 0.8140625, 0.36203703703703705]_EK_0073_P01_09_frame_0000205225.jpg" src="images/[0.35052083333333334, 0.0, 0.8140625, 0.36203703703703705]_EK_0073_P01_09_frame_0000205225.jpg">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: yes<br></p>
+          <p>kinematic: translation<br></p>
+          <p>movable: one_hand<br></p>
+          <p>interaction_type: free<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <div>
+          <img alt="[0.375, 0.806640625, 0.6796875, 1.0]_taskonomy_gluck_point_434_view_9_domain_rgb.png" src="images/[0.375, 0.806640625, 0.6796875, 1.0]_taskonomy_gluck_point_434_view_9_domain_rgb.png">
+        </div>
+        <div class="info-below-image">
+          <p>rigid: no<br></p>
+          <p>kinematic: n/a<br></p>
+          <p>movable: two_hands<br></p>
+          <p>interaction_type: pull<br></p>
+        </div>
+      </div>
+      <div class="info-container"></div>
+    </div>
+  </body>
+</html>

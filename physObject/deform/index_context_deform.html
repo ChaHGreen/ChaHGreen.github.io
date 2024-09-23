@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Visualization</title>
+    <style>
+    img {
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+        border: 1px solid #ccc;
+    }
+    .image-container {
+        width: 50%; /* 左侧图片列，占50% */
+        flex: none;
+    }
+    .info-container {
+        width: 50%; /* 右侧文字列，占50% */
+        padding-left: 20px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 180895_41924.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Pen</p>
+        <p>Right Object: Clothing</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a pen, and the object on the right is a piece of clothing. The pen, being made of plastic, is more rigid and less likely to deform under normal conditions without breaking. In contrast, the clothing, depending on its material, can be more flexible and may change shape under normal conditions without breaking. Therefore, the clothing is more deformable.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 225573_195810.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Flowerpot</p>
+        <p>Right Object: Toy</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a flowerpot, and the object on the right is a toy. The flowerpot, being made of ceramic or plastic, is less deformable because it is designed to hold soil and plants, which requires a certain level of rigidity to prevent the contents from spilling. The toy, on the other hand, is made of a soft material, likely fabric or plush, which allows it to be easily deformed without breaking. Therefore, the toy is more deformable.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 233449_206892.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Washing machine</p>
+        <p>Right Object: Luggage and bags</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a washing machine, which is made of metal and plastic components that are designed to be sturdy and withstand the mechanical stress of washing cycles. The object on the right is a piece of luggage, which is typically made of fabric or soft materials that can be more easily deformed under pressure or when external force is applied. Therefore, the luggage is more deformable than the washing machine.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 8930_148915.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Tiara</p>
+        <p>Right Object: Remote control</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a tiara, which is typically made of metal and is designed to be rigid to maintain its shape and structure. The object on the right is a remote control, which is usually made of plastic and has a flexible design that allows it to bend slightly under pressure. Considering the materials and typical use, the remote control is more likely to change shape under normal conditions without breaking or when external force is applied.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 272366_275844.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Blender</p>
+        <p>Right Object: Plate</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a blender, which is typically made of hard plastic or metal and is designed to be sturdy to withstand the forces of blending. The object on the right is a plate with fruits and nuts, which are organic and can be deformed under pressure. The plate itself is likely made of ceramic or glass, which is also rigid and does not deform easily. However, the fruits and nuts on the plate are more likely to change shape under normal conditions without breaking, as they are organic and can be easily squished or bent.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 62481_235721.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Game controller/pad</p>
+        <p>Right Object: Book</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a game controller, and the object on the right is a book. The game controller is made of plastic and has a design that allows for some flexibility in the buttons and joysticks, which can be pressed and moved without breaking. The book, on the other hand, is made of paper and is bound by a cover, which is less flexible and more prone to damage if bent or pressed. Therefore, the game controller is more deformable than the book.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 260453_138330.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: basketball</p>
+        <p>Right Object: Orange</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a basketball, and the object on the right is an orange. The basketball is made of a rubber or composite material that is designed to be bouncy and flexible, allowing it to deform when pressure is applied, such as when it is dribbled or thrown. The orange, on the other hand, is a fruit with a hard outer peel and a soft, juicy interior. While it can be squeezed to some extent, it is not designed to be deformable in the same way as the basketball. Therefore, the basketball is more deformable than the orange.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 297959_115274.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Can opener</p>
+        <p>Right Object: basketball</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a can opener, which is typically made of metal and has a rigid structure designed to cut through the lid of a can. The object on the right is a basketball, which is made of a flexible material like rubber or composite leather and is designed to be bouncy and deformable to allow for play. Under normal conditions, the basketball would be more likely to change shape without breaking, as it is designed to absorb impact and return to its original shape. The can opener, on the other hand, is not designed to change shape and would likely break if subjected to the same forces.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 58361_202765.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Apple</p>
+        <p>Right Object: blanket</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is an apple, and the object on the right is a blanket. Apples are generally rigid and have a hard outer skin that protects the softer flesh inside. They can be deformed to a certain extent, such as when bitten or pressed, but they are not highly deformable. Blankets, on the other hand, are made of fabric and are designed to be soft and flexible. They can be easily folded, rolled, or manipulated without breaking. Therefore, the blanket is more deformable than the apple.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 195107_158186.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Lamp</p>
+        <p>Right Object: Toy</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left appears to be a lamp, which is typically made of a rigid material such as metal or plastic, and its structure is designed to hold a light bulb and provide illumination. The object on the right seems to be a toy, which is often made of a more flexible material like plastic or rubber, and its design allows for play and interaction, which may involve bending or twisting. Considering the materials and typical use, the toy is more likely to change shape under normal conditions without breaking or when external force is applied.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 120596_57483.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Microwave oven</p>
+        <p>Right Object: Book</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a microwave oven, and the object on the right is a book. The microwave oven is made of metal and plastic, materials that are generally rigid and do not deform easily. The book, on the other hand, is made of paper and cardboard, which are more flexible and can bend or warp under pressure. Therefore, the book is more deformable than the microwave oven.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 108620_121438.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Computer monitor</p>
+        <p>Right Object: Facial tissue holder</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a computer monitor, and the object on the right is a facial tissue holder. The computer monitor is made of a rigid material, likely glass or a hard plastic, and is designed to display images without bending or warping. The facial tissue holder, on the other hand, is made of a softer material, likely paper or a light plastic, and is designed to hold tissues in a way that allows them to be easily dispensed. The tissue holder is more likely to change shape under normal conditions without breaking, as it is designed to be flexible and can bend slightly to accommodate the tissues. Therefore, the facial tissue holder is more deformable than the computer monitor.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 147680_98147.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Dumbbell</p>
+        <p>Right Object: Spoon</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a dumbbell, which is typically made of metal and is designed to be rigid to withstand the weight of the user during exercise. The object on the right is a spoon, which is usually made of metal or plastic and is designed to be flexible enough to scoop and hold food without breaking. Given the materials and the intended use of each object, the spoon is more likely to change shape under normal conditions without breaking or when external force is applied.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 62230_150211.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Laptop</p>
+        <p>Right Object: Flowerpot</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a laptop, and the object on the right is a flowerpot. The laptop is more deformable because its screen and hinge allow for flexible movement, while the flowerpot is rigid and does not flex during normal conditions or when external force is applied.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 49565_49555.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Infant bed</p>
+        <p>Right Object: Teddy bear</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is an infant bed, and the object on the right is a teddy bear. The infant bed is made of a rigid structure designed to safely contain an infant, and it is not meant to change shape under normal conditions. The teddy bear, on the other hand, is made of soft materials like fabric and stuffing, which can easily be compressed or manipulated without breaking. Therefore, the teddy bear is more deformable than the infant bed.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 27871_216369.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Waste container</p>
+        <p>Right Object: Teddy bear</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a waste container, typically made of plastic or metal, which is rigid and does not deform easily. The object on the right is a teddy bear, which is made of soft materials like fabric and stuffing, allowing it to be more easily deformed without breaking. Therefore, the teddy bear is more deformable than the waste container.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 303683_100186.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Bottle</p>
+        <p>Right Object: Clothing</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left appears to be a bottle, which is typically made of glass or plastic. These materials are relatively rigid and do not deform easily. The object on the right is a piece of clothing, which is made of fabric. Fabric is a flexible material that can easily change shape without breaking, especially when compared to the rigidity of a bottle. Therefore, the clothing is more deformable than the bottle.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 287496_233570.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: High heels</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a pair of high-heeled shoes, and the object on the right is a container of Oxy powder. High-heeled shoes are typically made of leather or synthetic materials with a rigid structure to maintain their shape and provide support. The container, on the other hand, is likely made of plastic or metal, materials that can be more easily deformed under pressure. Considering the materials and the typical use of these objects, the container is more likely to change shape under normal conditions without breaking or when external force is applied.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 24241_162061.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Headphones</p>
+        <p>Right Object: Pillow</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a pair of headphones, and the object on the right is a pillow. Headphones are typically made of plastic and metal components, which are rigid and do not deform easily. In contrast, pillows are made of soft materials like cotton or foam, which are designed to conform to the shape of the user's head and neck, making them highly deformable. Therefore, the pillow is more deformable than the headphones.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 255554_132427.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Remote control</p>
+        <p>Right Object: Tea</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a remote control, and the object on the right is a jar of tea. The remote control is made of plastic and has a rigid structure with buttons that are designed to be pressed, but it does not have the ability to change shape significantly without breaking. The tea, on the other hand, is a loose leaf that can be easily compressed or spread out without breaking, indicating a higher degree of deformability.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 249374_172408.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Spoon</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a metal spoon, and the object on the right is a plastic container. The spoon is more deformable because metal, while strong, can bend under pressure, especially if it is a thin metal like that of a spoon. The plastic container, while also capable of bending, is likely to be more rigid and less deformable than the metal spoon due to its thicker walls and the fact that it is designed to hold contents, which would require a certain level of structural integrity.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 56023_142993.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Mug</p>
+        <p>Right Object: Chair</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a ceramic mug, and the object on the right is a chair with a fabric cover. Ceramic is a hard, brittle material that does not easily deform. The mug's shape is fixed and it would break before it could change shape significantly. The chair, on the other hand, has a fabric cover that can stretch and move to some extent, and the chair's structure itself is designed to be somewhat flexible to accommodate different sitting positions. Therefore, the chair is more deformable than the mug.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 263422_219871.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: basketball</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a basketball, which is typically made of a rubber or composite material that allows it to bounce and deform slightly when in contact with a surface. The object on the right is a container, likely made of a harder material such as ceramic or plastic, which is less likely to deform under normal conditions. When comparing the two, the basketball is more deformable due to its material and the nature of its use, which involves bouncing and being pressed against various surfaces.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 153309_101533.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Candle</p>
+        <p>Right Object: Pen</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a candle, and the object on the right is a pen. Candles are typically made of wax, which is a material that can melt and change shape when exposed to heat. However, in its solid state, a candle is relatively rigid and does not deform easily. The pen, on the other hand, is likely made of plastic or metal, materials that are more rigid and less likely to deform under normal conditions. Therefore, the pen is more deformable than the candle when considering the typical use and material properties of these objects.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 307861_271094.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Alarm clock</p>
+        <p>Right Object: Chopsticks</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is an alarm clock, and the object on the right is a pair of chopsticks. The alarm clock is made of plastic and metal, which are materials that are generally rigid and do not deform easily. The chopsticks, on the other hand, are made of wood, which is a more flexible material that can bend and deform under pressure. Therefore, the chopsticks are more deformable than the alarm clock.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 49124_255324.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Lipstick</p>
+        <p>Right Object: Drum</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a lipstick, which is typically made of a rigid material like metal or plastic, designed to hold its shape and provide a smooth surface for application. The object on the right is a drum, which is made of a flexible material like leather or synthetic skin stretched over a rigid frame. The drum's material is designed to vibrate and produce sound when struck, which requires a certain degree of flexibility. Therefore, the drum is more deformable than the lipstick, as it can change shape under normal conditions without breaking when external force is applied.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 252696_307034.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Whisk</p>
+        <p>Right Object: Humidifier</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a whisk, which is typically made of metal and has a rigid structure designed to mix ingredients. The object on the right is a humidifier, which is usually made of plastic and has a structure that allows it to hold water and release moisture into the air. The humidifier's design includes a flexible water tank and a fan, which suggests that it can change shape slightly under normal conditions without breaking. The whisk, on the other hand, is designed to be rigid to effectively mix ingredients without bending or breaking. Therefore, the humidifier is more deformable than the whisk.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 171318_261219.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Plate</p>
+        <p>Right Object: Orange</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left appears to be a bowl with a red substance, which could be a food item, and the object on the right is an orange. The orange is more deformable because it is a soft fruit that can be easily squeezed and deformed under pressure, while the bowl, if made of ceramic or metal, is rigid and does not deform unless subjected to extreme force.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 52452_194437.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Tea cup</p>
+        <p>Right Object: Dishwasher</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a ceramic mug, and the object on the right is a dishwasher. Ceramic is a brittle material that is not easily deformable; it will typically break before it deforms. The dishwasher, on the other hand, is made of metal and plastic, materials that can bend and flex under pressure without breaking. Therefore, the dishwasher is more deformable than the ceramic mug.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 104950_202765.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Bottle</p>
+        <p>Right Object: blanket</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left appears to be a bottle, which is typically made of rigid materials like glass or plastic. The object on the right seems to be a blanket, which is made of fabric and is designed to be flexible and soft. Given the materials and typical use of these objects, the blanket is more deformable as it can change shape easily without breaking, whereas the bottle would require more force to deform and is more likely to break if subjected to significant deformation.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 136431_150555.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Plate</p>
+        <p>Right Object: Flashlight</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left appears to be a plate, which is typically made of ceramic or glass, materials known for their rigidity and lack of deformability. The object on the right seems to be a flashlight, which is likely made of plastic or metal, materials that can be more easily deformed under pressure. Considering the typical use and material properties of these objects, the flashlight is more likely to change shape under normal conditions without breaking or when external force is applied.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 254240_290532.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Tin can</p>
+        <p>Right Object: House/Car Key</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a tin can, and the object on the right is a house/car key. The tin can is made of metal, which is generally rigid and does not deform easily. The key, on the other hand, is made of metal as well but has a structure that allows for some flexibility, such as the bow and the teeth of the key. However, the key is designed to be rigid enough to fit into a lock and turn without bending. Under normal conditions, the tin can would require more force to deform compared to the key, which can bend slightly under pressure. Therefore, the key is more deformable than the tin can.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 18789_25069.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Measuring cup</p>
+        <p>Right Object: Pen</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a measuring cup, typically made of plastic or glass, and the object on the right is a pen, which is likely made of plastic. The measuring cup is designed to hold liquids and measure their volume, which requires it to be rigid and maintain its shape. The pen, on the other hand, is designed to be held and written with, which allows for some flexibility in its structure. However, the pen's primary function does not require it to be highly deformable, and it is likely to be more rigid than the measuring cup. Therefore, the measuring cup is more likely to change shape under normal conditions without breaking or when external force is applied.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 110243_302923.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Spoon</p>
+        <p>Right Object: Bottle</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a spoon, and the object on the right is a bottle. The spoon, being made of metal, is more rigid and less likely to deform under normal conditions. The bottle, depending on its material, could be made of glass or plastic, both of which can be more deformable than metal. However, the bottle's structure, with a narrow neck and a wider body, suggests that it is designed to hold liquid and maintain its shape, which means it is less likely to deform under normal conditions without breaking.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 172343_286091.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Box of Macaroni &amp; Cheese</p>
+        <p>Right Object: Pitcher (Container)</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a box of macaroni and cheese, which is made of cardboard and is rigid. The object on the right is a pitcher, which is typically made of plastic or glass and has a handle and spout that allow it to be deformed slightly when filled with liquid or when pressure is applied. Given that the pitcher is designed to hold and pour liquids, it is more likely to change shape under normal conditions without breaking, whereas the macaroni and cheese box is designed to be rigid and protect its contents.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 64704_258016.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Bottle</p>
+        <p>Right Object: Clothing</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a water bottle, which is typically made of a rigid material such as plastic or metal. The object on the right is a piece of clothing, which is made of fabric. Fabric is generally more flexible and can change shape more easily than rigid materials. Therefore, the clothing is more deformable than the water bottle.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 220167_81631.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Calculator</p>
+        <p>Right Object: Toy</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a calculator, which is typically made of plastic and has a rigid structure designed to withstand the pressure of being pressed. The object on the right is a toy, which appears to be made of a soft, pliable material, likely rubber or a similar substance. Given the materials and typical use, the toy is more likely to change shape under normal conditions without breaking or when external force is applied, making it more deformable than the calculator.</p>
+      </div>
+    </div>
+  </body>
+</html>

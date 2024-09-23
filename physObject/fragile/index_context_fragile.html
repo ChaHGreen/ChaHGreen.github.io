@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Visualization</title>
+    <style>
+    img {
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+        border: 1px solid #ccc;
+    }
+    .image-container {
+        width: 50%; /* 左侧图片列，占50% */
+        flex: none;
+    }
+    .info-container {
+        width: 50%; /* 右侧文字列，占50% */
+        padding-left: 20px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 214784_164974.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Stapler</p>
+        <p>Right Object: Mug</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a stapler, and the object on the right is a mug. The stapler is made of plastic and metal, which are materials that can be easily damaged if dropped or mishandled, especially the plastic parts which can crack or break. The mug, on the other hand, is made of ceramic, which is generally more durable and less likely to break under normal conditions unless it is dropped from a significant height or subjected to a strong impact. Therefore, the stapler is more fragile.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 280844_305422.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Coffeemaker</p>
+        <p>Right Object: Lamp</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a coffee maker, and the object on the right is a lamp. The coffee maker is more fragile because it has a glass carafe and internal components that can be easily broken if dropped or mishandled. The lamp, while also delicate, has a metal base and a fabric lampshade that are less likely to break under normal conditions. Therefore, the coffee maker is more fragile.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 64651_159422.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Computer mouse</p>
+        <p>Right Object: Teapot</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a computer mouse, and the object on the right is a teapot. The computer mouse is made of plastic and has a relatively simple structure, which can be easily damaged if dropped or mishandled. The teapot, on the other hand, is made of glass and metal, materials that are generally more durable and can withstand more impact without breaking. However, the glass part of the teapot is more fragile than the metal, and if the teapot is dropped, the glass is likely to shatter. Therefore, considering the materials and the potential for damage, the teapot is more fragile than the computer mouse.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 151592_147251.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Tennis racket</p>
+        <p>Right Object: Coffeemaker</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a tennis racket, and the object on the right is a coffee maker. The tennis racket is made of a combination of materials, including a metal frame and a synthetic grip, which can be damaged if mishandled or dropped, especially the strings which can break. The coffee maker, on the other hand, is typically made of durable materials like stainless steel and plastic, designed to withstand the heat and pressure of brewing coffee. While both objects can be damaged, the tennis racket is more likely to be damaged under normal conditions or from external impact due to its delicate strings and frame.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 132662_250470.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Mug</p>
+        <p>Right Object: Mug</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a ceramic mug, and the object on the right is a glass mug. Ceramic mugs are typically made of a material that is less prone to shattering upon impact compared to glass. Glass mugs, while they can be more aesthetically pleasing, are more fragile and can easily break if dropped or struck with force. Therefore, the glass mug on the right is more fragile.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 267838_171421.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Pen</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a pen, and the object on the right is a container. The pen is more fragile because it is made of plastic and metal, which can be easily broken or damaged if dropped or mishandled. The container, while also made of plastic, appears to be more robust due to its thicker walls and the fact that it is designed to hold items, suggesting it can withstand more pressure and impact.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 204158_111248.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Apple</p>
+        <p>Right Object: Plate</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is an apple, and the object on the right is a plate with a spoon. The apple is more fragile because its skin can easily be bruised or punctured, and the internal flesh can be damaged if dropped or mishandled. The plate, while also breakable, is typically made of ceramic or glass, which is more resistant to damage from normal handling compared to the delicate nature of an apple.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 135765_191872.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Backpack</p>
+        <p>Right Object: Watch</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a backpack, and the object on the right is a watch. The watch is more fragile because its small, delicate components, such as the glass face and internal mechanisms, can be easily damaged if dropped or mishandled, whereas the backpack is made of durable materials and is designed to withstand regular use and occasional impacts.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 248019_308681.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Spoon</p>
+        <p>Right Object: Plastic bag</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a metal spoon, and the object on the right is a plastic bag of tomato ketchup. The spoon is more fragile because it is made of metal, which can bend or break if subjected to enough force, especially if it is dropped or mishandled. The plastic bag, while not indestructible, is typically made of a more flexible material that can withstand more bending and stretching without breaking.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 51178_188774.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Golf ball</p>
+        <p>Right Object: Jug</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a golf ball, and the object on the right is a jug. Golf balls are made of a hard, durable material designed to withstand the impact of being hit by a golf club. They are also designed to be thrown and hit repeatedly without breaking. On the other hand, the jug, while it may be made of a sturdy material like plastic or metal, is more likely to be damaged if dropped or mishandled due to its shape and the potential for the lid to be dislodged. Therefore, the golf ball is less likely to be damaged under normal conditions or from external impact compared to the jug.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 2951_100943.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Mixing bowl</p>
+        <p>Right Object: Camera</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a mixing bowl, and the object on the right is a camera. The mixing bowl is made of metal and is designed to withstand the weight of ingredients and the force of mixing, making it less fragile. The camera, on the other hand, has a more complex structure with delicate internal components such as lenses and sensors that can be easily damaged if dropped or mishandled. Therefore, the camera is more fragile.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 133062_174800.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Digital clock</p>
+        <p>Right Object: Perfume</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a digital clock, and the object on the right is a perfume bottle. The perfume bottle is more fragile because its glass or plastic material can easily shatter or crack if dropped or mishandled, whereas the digital clock, typically made of plastic and metal, is more durable and less likely to break under normal conditions.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 225589_28971.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Christmas tree</p>
+        <p>Right Object: Bowl</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a Christmas tree, which is typically made of materials like wood or plastic, and the object on the right is a bowl, which is usually made of ceramic or glass. The Christmas tree, depending on its material, can be quite sturdy and not easily broken, especially if it is made of wood. However, the bowl, if made of ceramic or glass, is more fragile and can easily crack or shatter if dropped or mishandled. Therefore, the bowl is more fragile.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 180369_217081.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Pillow</p>
+        <p>Right Object: Plate</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a pillow, and the object on the right is a stack of plates. Pillows are typically made of soft materials like cotton or foam, which can be compressed or squished without breaking. On the other hand, plates are made of ceramic or porcelain, which are brittle materials that can easily crack or shatter if dropped or mishandled. Therefore, the pillow is less likely to be damaged under normal conditions or from external impact compared to the plates.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 172884_161517.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Door handle</p>
+        <p>Right Object: Plate</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a door handle, which is typically made of metal and designed to withstand the force of opening and closing a door. The object on the right is a slice of bread on a plate, which is made of soft, edible material and is not designed to withstand any significant force or impact. Therefore, the bread is more fragile and would require more careful handling to avoid damage.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 101321_188774.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Doughnut</p>
+        <p>Right Object: Jug</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a doughnut, which is typically made of soft, edible materials like dough and sugar. The object on the right is a jug, which is usually made of durable materials like plastic or metal. A doughnut is more fragile because it can easily be squished or broken if mishandled, whereas a jug is designed to hold liquids and is therefore more robust and less likely to break under normal conditions.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 175323_18431.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Toilet</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a toilet, and the object on the right is a container. The toilet, being made of porcelain, is more fragile because it can easily crack or break if dropped or mishandled, especially considering its ceramic structure. The container, while not entirely visible, appears to be made of a sturdier material, possibly metal or hard plastic, which is less likely to break under normal conditions or from external impact.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 129668_218970.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Boot</p>
+        <p>Right Object: Bottle</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a boot, and the object on the right is a water bottle. The boot is made of leather, which is a sturdy material that can withstand wear and tear, while the water bottle, although made of a durable material like stainless steel, has a more complex structure with a cap and a label that could be damaged if mishandled. The boot is designed to be walked in and is therefore built to be more resilient to impact and pressure. In contrast, the water bottle, while also designed to be durable, has parts that are more susceptible to damage from external forces.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 91750_117820.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Can opener</p>
+        <p>Right Object: Printer</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a can opener, which is typically made of metal and has a sturdy construction designed to withstand the force of opening cans. The object on the right is a printer, which is made of plastic and metal components that are more susceptible to damage from drops, impacts, or even from the stress of printing. Printers have delicate internal mechanisms that can be easily disrupted if mishandled. Therefore, the printer is more fragile than the can opener.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 235754_82343.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Tennis ball</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a tennis ball, and the object on the right is a container. Tennis balls are typically made of a rubber compound covered with a fibrous felt which is designed to be durable and withstand the impact of being hit by a tennis racket. The container, on the other hand, appears to be made of metal, which is generally more resistant to damage from impacts compared to a tennis ball. However, the container's lid is not secured, which could make it more susceptible to damage if it were to fall or be dropped. Considering the typical use and material properties, the tennis ball is more likely to be damaged under normal conditions or from external impact due to its softer material and the potential for the felt to wear out over time.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 289460_2941.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Paper</p>
+        <p>Right Object: Watch</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a piece of paper, and the object on the right is a watch. The watch is more fragile because its glass face and internal mechanisms can be easily damaged if dropped or mishandled, whereas the paper, while it can tear or crumple, is less likely to be damaged under normal conditions or from external impact.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 49565_130476.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Infant bed</p>
+        <p>Right Object: Watch</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is an infant bed, which is typically made of sturdy materials like wood and is designed to safely contain and protect a baby. The object on the right is a watch, which is made of materials like metal and plastic and is designed to be worn on the wrist. While both objects can be damaged, the watch is more likely to be damaged from external impact or normal wear and tear, such as scratches or cracks in the glass, or damage to the internal mechanisms. The infant bed, on the other hand, is designed to be more durable and is less likely to be damaged under normal conditions.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 186333_217471.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Countertop</p>
+        <p>Right Object: Bowl</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a countertop, and the object on the right is a bowl. The bowl is more fragile because it is made of ceramic or porcelain, which can easily crack or break if dropped or mishandled, whereas the countertop is made of a more durable material like granite or marble, which is less likely to break under normal conditions or from external impact.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 93142_4793.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Tin can</p>
+        <p>Right Object: Television</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a tin can, and the object on the right is a television. The television is more fragile because it has a glass screen that can easily shatter if dropped or struck, and its internal components can be damaged if mishandled. The tin can, while not indestructible, is made of metal and is less likely to break under normal conditions or from external impact.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 163249_288201.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Sun hat</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a sun hat, which is typically made of straw or a similar material. The object on the right is a plastic container with compartments. The sun hat, being made of a natural fiber, is more susceptible to damage from external impacts, such as being crushed or bent, compared to the plastic container, which is more rigid and less likely to break under normal conditions. Therefore, the sun hat is more fragile.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 156716_20115.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Door</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a wooden door, and the object on the right is a container with a lid. The wooden door is more fragile because it is made of a material that can be easily damaged by impacts, scratches, or environmental factors such as moisture or temperature changes. The container, on the other hand, appears to be made of a sturdy material like metal or hard plastic, which is less likely to be damaged by normal handling or external impacts.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 12791_91263.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Knife</p>
+        <p>Right Object: PlayStation</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a knife, and the object on the right is a PlayStation. The knife is more fragile because its blade can easily break or chip if used improperly or dropped, whereas the PlayStation is a solid electronic device designed to withstand normal handling and use.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 153309_108895.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Candle</p>
+        <p>Right Object: Candle</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a candle, and the object on the right is also a candle. Both candles are made of wax, which is a material that can be easily melted or broken if mishandled. However, the candle on the right is encased in a glass jar, which provides additional protection against external impacts. The candle on the left is not encased and is more exposed to potential damage. Therefore, the candle on the left is more fragile as it lacks the protective glass jar of the candle on the right.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 124247_42872.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Necklace</p>
+        <p>Right Object: Pressure cooker</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a necklace, and the object on the right is a pressure cooker. The necklace is more fragile because it is made of small, delicate beads and metal links that can easily break or become dislodged if mishandled. The pressure cooker, while also delicate, is designed to withstand high pressure and is made of materials that are more resistant to damage from normal use.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 182645_229227.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Snack</p>
+        <p>Right Object: Laptop</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a bag of chips, and the object on the right is a laptop. The laptop is more fragile because it contains delicate electronic components that can be easily damaged if dropped or mishandled, whereas the bag of chips, while not indestructible, is less likely to be damaged from normal handling.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 26566_245643.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Knife</p>
+        <p>Right Object: Mug</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a knife, and the object on the right is a mug. The knife is made of metal, which is a hard and durable material, while the mug appears to be made of ceramic or porcelain, which can be brittle and prone to chipping or breaking if dropped or mishandled. Therefore, the mug is more fragile than the knife.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 289459_65058.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: House/Car Key</p>
+        <p>Right Object: Mobile phone</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a house/car key, which is typically made of metal and has a hard structure designed to withstand the wear and tear of daily use. The object on the right is a mobile phone, which is made of glass and metal components that are more susceptible to damage from drops, impacts, or pressure. Given the materials and typical use, the mobile phone is more fragile and would require more careful handling to avoid breaking or damaging it.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 160785_298745.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: pottery</p>
+        <p>Right Object: Mobile phone</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a pottery jar, and the object on the right is a mobile phone. Pottery is typically made from clay and is fired at high temperatures, which makes it relatively durable but can still be fragile if dropped or mishandled, as it can chip or break. The mobile phone, on the other hand, is made from materials like glass and metal, which are also fragile and can easily break or shatter upon impact. However, the mobile phone is designed to be more resilient due to its construction and the presence of protective cases. In normal conditions, the mobile phone is more likely to be damaged from external impact due to its glass screen and the potential for internal components to be affected. Therefore, the mobile phone is more fragile.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 144397_87853.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Wall clock</p>
+        <p>Right Object: Perfume</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a wall clock, and the object on the right is a perfume bottle. The wall clock is more fragile because its glass face and internal mechanisms can be easily damaged if dropped or mishandled, whereas the perfume bottle, while also made of glass, is typically designed to be more durable and less likely to break under normal conditions.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 185610_51784.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Blender</p>
+        <p>Right Object: Beer</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a blender, which is typically made of durable materials such as stainless steel and plastic. It is designed to withstand the stress of blending various ingredients. The object on the right is a beer can, which is made of aluminum, a material that is relatively strong but can be punctured or crushed if mishandled. Considering the typical use and material properties, the beer can is more likely to be damaged under normal conditions or from external impact, such as being crushed or punctured, compared to the blender, which is designed to be more robust.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Visualization</title>
+    <style>
+    img {
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+        border: 1px solid #ccc;
+    }
+    .image-container {
+        width: 50%; /* 左侧图片列，占50% */
+        flex: none;
+    }
+    .info-container {
+        width: 50%; /* 右侧文字列，占50% */
+        padding-left: 20px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 183293_40618.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Christmas tree</p>
+        <p>Right Object: Clothing</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a Christmas tree, which is typically made of a light frame and decorated with ornaments. The object on the right is a stack of clothing, which includes a belt and various garments. The clothing items are likely made of fabric and contain materials that add to their mass. Considering the size, material, and potential contents, the clothing on the right appears to be heavier than the Christmas tree on the left.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 102924_118199.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Pillow</p>
+        <p>Right Object: Jacket</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a pillow, and the object on the right is a jacket. Pillows are typically made of soft materials like cotton or foam and can be filled with materials such as feathers or synthetic fibers, which can add to their weight. Jackets, on the other hand, are made of fabric and may contain padding or insulation, but they are generally lighter than pillows due to their structure and the materials used. Considering the size and the likely contents of each object, the pillow on the left is likely to be heavier than the jacket on the right.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 55476_208807.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Pen</p>
+        <p>Right Object: Spatula</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a pen, and the object on the right is a spatula. The pen is likely made of plastic and metal, which are relatively lightweight materials. The spatula, on the other hand, appears to be made of wood, which is a denser material and typically heavier than plastic. Additionally, the spatula is larger in size, which would contribute to its overall mass. Considering these factors, the spatula is likely to be heavier than the pen.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 204106_49722.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Carrot</p>
+        <p>Right Object: Towel</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a carrot, and the object on the right is a towel. The carrot, being a vegetable, has a certain mass due to its water content and the density of its organic material. The towel, on the other hand, is made of fabric and likely contains some air, which would make it lighter than the carrot. Considering the size and material of both objects, the carrot appears to be heavier than the towel.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 262423_179456.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Helmet</p>
+        <p>Right Object: PlayStation</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a helmet, and the object on the right is a PlayStation console. Helmets are typically made of hard materials like plastic or polycarbonate, and they are designed to be sturdy to protect the head. PlayStation consoles, on the other hand, are electronic devices made of plastic and metal components, but they are not designed to be as heavy as protective gear. Considering the materials and the purpose of each object, the helmet is likely to be heavier due to its construction and the need to withstand impact.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 55405_202009.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Pencil</p>
+        <p>Right Object: Plate</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a pencil, and the object on the right is a plate with two doughnuts. The pencil is made of wood and graphite, which are relatively lightweight materials. The plate, on the other hand, is likely made of ceramic or metal, which are heavier materials. Additionally, the doughnuts add to the mass of the plate. Considering the size, material, and potential contents, the plate with the doughnuts is likely to be heavier than the pencil.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 290135_193430.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Pillow</p>
+        <p>Right Object: Jug</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a pillow, and the object on the right is a jug. Pillows are typically made of soft materials like cotton or foam, which are lightweight. The jug, on the other hand, appears to be made of metal and has a handle, suggesting it could be used to hold liquids. If the jug is empty, it would likely be lighter than the pillow. However, if the jug contains a liquid, it would be heavier than the pillow. Without knowing the contents of the jug, it is difficult to determine which object is heavier. Assuming the jug is empty, the pillow would be heavier due to its larger size and the material it is made of.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 212800_46996.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Football helmet</p>
+        <p>Right Object: Backpack</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a football helmet, and the object on the right is a backpack. The football helmet is made of hard plastic and foam padding, which are materials that are generally heavier than the fabric and materials used in a backpack. Additionally, the helmet is designed to be protective and thus is likely to be heavier than a backpack, which is designed to be carried and may contain items that could add to its weight, but the helmet's inherent material and construction suggest it is heavier.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 190657_144370.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Bottle</p>
+        <p>Right Object: Belt</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a bottle, which typically has a certain weight due to its material and volume. The object on the right is a belt, which is made of a material that is generally lighter than glass or plastic. Without knowing the exact contents of the bottle, it is difficult to determine the exact mass. However, considering the materials and typical use, a bottle is usually heavier than a belt.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 11031_167869.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Chair</p>
+        <p>Right Object: Refrigerator</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a chair, and the object on the right is a refrigerator. The chair is made of plastic and metal, which are relatively lightweight materials, and it does not appear to contain any additional items that would increase its mass. The refrigerator, on the other hand, is made of metal and plastic and is likely to contain food items, which would add to its overall mass. Given the size and the potential contents of the refrigerator, it is reasonable to conclude that the refrigerator is heavier than the chair.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 177665_278719.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Spoon</p>
+        <p>Right Object: Pillow</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a spoon, and the object on the right is a pillow. The spoon is likely made of metal, which is a dense material, but it is small in size. The pillow, on the other hand, is larger and appears to be filled with a soft material, which could be cotton or synthetic fibers. Given the size and the material composition, the pillow is likely to be heavier than the spoon.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 157975_233570.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Ring</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a ring, and the object on the right is a container of Oxy powder. The ring, being a piece of jewelry, is typically made of metal and is small in size, which means it has a relatively low mass. The container, on the other hand, is made of plastic and likely contains a significant amount of Oxy powder, which would add to its mass. Considering the size and material of the objects, the container with the powder is likely to be heavier than the ring.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 173452_132954.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Pen</p>
+        <p>Right Object: Flowerpot</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a highlighter pen, and the object on the right is a flowerpot. The highlighter pen is made of plastic and contains ink, which is relatively lightweight. The flowerpot, on the other hand, is made of ceramic and likely contains soil and a plant, which would add to its mass. Considering the materials and potential contents, the flowerpot is likely to be heavier than the highlighter pen.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 161124_67670.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Tea cup</p>
+        <p>Right Object: Mobile phone</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a tea cup, and the object on the right is a mobile phone. The tea cup, depending on its material, could be made of ceramic or porcelain, which are heavier materials compared to the plastic or metal typically used in mobile phones. Additionally, if the tea cup contains tea or other contents, it would add to its mass. The mobile phone, while it may contain electronic components, is generally lighter than a filled tea cup. Therefore, based on the materials and potential contents, the tea cup is likely to be heavier.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 261040_266810.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Baseball bat</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a baseball bat, which is typically made of wood or metal and is designed to be sturdy and heavy enough to hit a baseball. The object on the right is a container, which appears to be made of metal and has a handle, suggesting it is a portable storage item. Without knowing the exact contents of the container, it is difficult to determine its exact weight. However, based on the materials and typical use, the baseball bat is likely to be heavier than the container, especially if the container is empty or only contains lightweight items.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 157094_181354.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Egg (Food)</p>
+        <p>Right Object: Book</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is an egg, and the object on the right is a book. Eggs are typically lightweight, with a mass that can range from 50 to 70 grams depending on the size. The book, on the other hand, appears to be a hardcover with a substantial thickness, which suggests it could contain a significant amount of pages and possibly additional materials like a dust jacket or a bookmark. Given the size and potential contents of the book, it is likely to be heavier than the egg.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 157975_86268.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Ring</p>
+        <p>Right Object: Blender</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a ring, and the object on the right is a blender. The ring is typically made of metal and is small in size, while the blender is made of glass and plastic and is larger in size. The blender also has the potential to contain contents, which would add to its mass. Considering the materials and the potential for contents, the blender is likely to be heavier than the ring.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 46996_223949.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Backpack</p>
+        <p>Right Object: Bowl</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a backpack, and the object on the right is a bowl of apples. The backpack, depending on its contents, could be heavier than the bowl of apples. If the backpack is empty or contains lightweight items, it might be lighter than the bowl of apples. However, if the backpack is filled with heavy items, it could be heavier. The bowl of apples, on the other hand, has a known mass that can be estimated based on the number of apples and their average weight. Without knowing the contents of the backpack, it is difficult to make a definitive judgment. However, if we assume the backpack is empty or contains lightweight items, the bowl of apples would likely be heavier due to the mass of the apples.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 131970_267164.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Handbag</p>
+        <p>Right Object: Bowl</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a handbag, and the object on the right is a bowl. The handbag, depending on its contents, could be heavier than the bowl. If the handbag is empty, it might be lighter than the bowl, especially if the bowl is made of ceramic or glass and contains something inside. However, if the handbag is filled with items, it could be heavier. Without knowing the contents of the handbag, it is difficult to make a definitive judgment. Based on the visible size and assuming the bowl is empty, the bowl might be heavier due to its material and size.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 261942_29381.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Necklace</p>
+        <p>Right Object: Sink</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a necklace, and the object on the right is a sink. The necklace, depending on the material it is made of, could be quite heavy if it is made of metal or contains precious stones. The sink, being a ceramic or porcelain fixture, is likely to be heavier due to its size and the material it is made of. However, if the necklace is made of lightweight materials or if the sink is empty, the necklace could be lighter. Without specific information on the materials and contents, it is difficult to determine with certainty which is heavier.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 19768_274701.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Container</p>
+        <p>Right Object: Container</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a plastic container with a lid, and the object on the right is a bottle of ethanol. The plastic container appears to be empty, while the bottle of ethanol is likely to contain a liquid. Ethanol is a liquid with a density greater than air, which means it has mass. The plastic container, being empty, would have less mass than the bottle of ethanol. Therefore, the bottle of ethanol is likely to be heavier than the empty plastic container.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 121950_40718.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Measuring cup</p>
+        <p>Right Object: Perfume</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a measuring cup, which is typically made of plastic and is designed to hold liquids. The object on the right is a bottle of perfume, which is also made of plastic but contains a liquid inside. Considering the materials and the potential contents, the perfume bottle is likely to be heavier due to the liquid it contains, which adds to its mass. The measuring cup, while it can hold a liquid, is empty in the image and thus has less mass.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 224897_172649.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Dumbbell</p>
+        <p>Right Object: Luggage and bags</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a dumbbell, which is typically made of metal and is designed to be heavy for strength training. The object on the right is a piece of luggage with a patterned design, which is likely made of fabric and may contain items inside, but the fabric itself is not as dense or heavy as metal. Considering the materials and the purpose of the objects, the dumbbell is designed to be heavier than the luggage.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 241087_12749.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Envelope</p>
+        <p>Right Object: Chair</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is an envelope, which is typically made of paper and can be quite lightweight. The object on the right is a chair, which is made of materials such as metal and fabric, and is designed to support the weight of a person. Given the materials and the purpose of each object, the chair is likely to be heavier than the envelope, even if the envelope contains something inside.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 147710_251736.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: yoga mat</p>
+        <p>Right Object: Owl</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a yoga mat, which is typically made of a lightweight material such as PVC or TPE. The object on the right is an owl figurine, which appears to be made of ceramic or a similar material. Ceramic objects are generally heavier than their plastic counterparts. Additionally, the owl figurine may contain a hollow space inside, which could reduce its overall mass. However, the thickness and material of the owl figurine suggest that it is likely to be heavier than the yoga mat.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 22499_168221.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Toy</p>
+        <p>Right Object: Toy</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a plush toy, and the object on the right is a stuffed animal. Both objects are likely to be made of similar materials, such as fabric and stuffing. However, the plush toy on the left appears to be larger and has a more substantial form, which suggests it might be heavier than the stuffed animal on the right. Without additional information on the specific materials or the exact dimensions of each object, it is difficult to determine the exact mass. Based on the visual comparison, the plush toy on the left seems to be the heavier object.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 42607_173139.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Game controller/pad</p>
+        <p>Right Object: Jacket</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a game controller, which is typically made of plastic and contains electronic components. The object on the right is a jacket, which is made of fabric and likely contains padding or insulation. Considering the materials and the potential contents, the jacket would likely be heavier due to its larger size and the materials used in its construction.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 54293_177213.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Computer mouse</p>
+        <p>Right Object: Milk</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a computer mouse, which is typically made of plastic and contains electronic components. The object on the right is a carton of almond milk, which is made of cardboard and contains a liquid. The computer mouse, while small, is likely to be heavier than the almond milk carton due to the materials it is made of and the solidity of its construction. The almond milk carton, while containing a liquid, is likely to be lighter due to the nature of the liquid and the lightweight material of the carton.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 30969_263128.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Knife</p>
+        <p>Right Object: Book</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a knife, and the object on the right is a book. The knife, while small, is made of metal and has a solid handle, which would give it a certain weight. The book, depending on its contents, could be heavier if it is a hardcover with a lot of pages or lighter if it is a paperback with fewer pages. Without knowing the exact contents of the book, it is difficult to determine the exact mass. However, considering the typical weight of a knife and a book, the book is likely to be heavier due to its larger size and potential for containing more material.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 301169_163202.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Orange</p>
+        <p>Right Object: Tripod</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is an orange, and the object on the right is a tripod. The orange is a fruit and typically weighs between 100 to 200 grams, depending on its size. The tripod, on the other hand, is made of metal and plastic and is designed to hold a camera, which can be quite heavy. Even without a camera, the tripod itself is likely to be heavier than the orange due to its materials and construction.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 136120_285558.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Plastic bag</p>
+        <p>Right Object: Clothing</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a plastic bag, and the object on the right is a brass instrument, possibly a trombone. The brass instrument is likely to be heavier due to the material it is made of, which is denser than the plastic material of the bag. Additionally, the size of the instrument suggests it has more mass than the bag, even if the bag were filled with items.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 146098_25598.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Headphones</p>
+        <p>Right Object: Book</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a pair of headphones, and the object on the right is a book. Headphones are typically made of lightweight materials such as plastic and metal, and they are designed to be portable. Books, on the other hand, can vary in weight depending on their size, thickness, and the type of paper used. However, a standard book is generally heavier than a pair of headphones due to the paper and binding materials. Without knowing the specific books and headphones in question, it is reasonable to assume that the book is likely to be heavier than the headphones.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 113393_72053.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Bicycle helmet</p>
+        <p>Right Object: Bottle</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a bicycle helmet, which is typically made of lightweight materials such as polycarbonate or carbon fiber for the outer shell and foam for the inner padding. The object on the right is a bottle, which appears to be made of glass or plastic and contains a liquid, likely a beverage. Considering the materials and the potential contents, the bottle with the liquid would likely be heavier than the bicycle helmet, which is designed to be lightweight for ease of use.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 153309_108895.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Candle</p>
+        <p>Right Object: Candle</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a candle, and the object on the right is also a candle. Both candles appear to be of similar size and shape, with the main difference being the presence of a wooden lid on the right candle. The lid adds to the overall mass of the right candle. However, without knowing the exact materials and the amount of wax in each candle, it is difficult to determine which is heavier based solely on visual inspection. Assuming both candles are of similar size and filled to the same level, the right candle with the wooden lid would likely be heavier due to the additional material of the lid.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 78437_309037.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Chopsticks</p>
+        <p>Right Object: Towel</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a pair of chopsticks, and the object on the right is a towel. Chopsticks are typically made of wood or bamboo, which are lightweight materials. The towel, depending on its size and the material it is made of, could be heavier if it is a large bath towel or if it is made of a heavier fabric. However, without knowing the exact size and material of the towel, it is difficult to make a definitive comparison. Based on the assumption that the towel is a standard-sized hand towel, it is likely that the chopsticks are lighter.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 83218_77877.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Fork</p>
+        <p>Right Object: Book</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a fork, and the object on the right is a book. The fork is made of metal, which is a dense material, but it is relatively small and lightweight. The book, on the other hand, is made of paper and cardboard, which are lighter materials, but it is larger in size and could potentially contain more mass if it has a lot of pages or is a hardcover. Without knowing the exact size and content of the book, it is difficult to determine with certainty which is heavier. However, based on the general characteristics of the objects, the book is likely to be heavier due to its larger size and potential for containing more material.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 214616_92138.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Picture frame</p>
+        <p>Right Object: Plate</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a picture frame, which typically contains a glass pane, a backing, and a frame made of materials like wood or metal. The object on the right is a plate with a fork and knife, which are made of metal. Considering the materials and the potential contents of the picture frame, it is likely to be heavier than the plate with cutlery.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 153444_251219.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Spoon</p>
+        <p>Right Object: Box</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a spoon, and the object on the right is a box with a tiara on top. The spoon is likely made of metal, which is a dense material, but it is small in size. The box, on the other hand, is larger and appears to be made of a heavier material, possibly wood or metal. The tiara on top of the box adds to the overall mass of the object. Considering the size, material, and potential contents, the box with the tiara is likely to be heavier than the spoon.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 198536_192116.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Door handle</p>
+        <p>Right Object: Bowl</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a door handle, which is typically made of metal and is designed to be sturdy and durable. The object on the right is a bowl, which is likely made of plastic or ceramic and contains a yellow object that could be a sponge or a toy. Considering the materials and the potential contents, the door handle is likely to be heavier due to its solid metal construction, whereas the bowl, even with its contents, would not add enough mass to outweigh the door handle.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 250134_82542.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Fork</p>
+        <p>Right Object: Camera</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a fork, and the object on the right is a camera. The fork is made of metal and is relatively small, while the camera is also made of metal and plastic but is larger in size. The camera likely contains electronic components and a battery, which would add to its mass. Considering the size and the materials, the camera appears to be heavier than the fork.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 58601_117023.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Fork</p>
+        <p>Right Object: Light bulb</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a fork, and the object on the right is a light bulb. The fork is made of metal, which is a dense material, and it has a handle that could potentially be made of a heavier material like wood or plastic. The light bulb, while also made of metal, is designed to be lightweight to facilitate easy handling and installation. Given that the fork is likely to be made of a heavier metal and the light bulb is designed to be light, the fork would be the heavier object.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 300667_106805.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Wallet</p>
+        <p>Right Object: Book</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a wallet, and the object on the right is a book with a pen on top. The wallet, being a small, flat item, is likely made of lightweight materials such as leather or synthetic materials. The book, on the other hand, appears to be a hardcover book, which typically has a heavier weight due to the thickness of the pages and the cover. Additionally, the presence of the pen suggests that the book may contain more content, which could add to its weight. Based on these factors, the book is likely to be heavier than the wallet.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 197031_163644.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Pen</p>
+        <p>Right Object: Trousers</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a pen, and the object on the right is a pair of trousers with a shirt and a bag. The pen is likely made of plastic or metal and is small in size, while the trousers, shirt, and bag are made of fabric and are larger in size. The trousers and shirt are likely to contain more mass due to their material and volume, and the bag may contain additional items that could add to the overall mass. Therefore, the object on the right appears to be heavier.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 48760_222332.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Bottle</p>
+        <p>Right Object: Bottle</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left appears to be a bottle of medicine or supplement, which typically contains a liquid or powder. The object on the right seems to be a bottle of cleaning solution, which is usually filled with a liquid. Both objects are made of plastic, which is a lightweight material. However, the cleaning solution bottle is larger in size and likely contains more liquid than the medicine or supplement bottle. Therefore, based on the size and the likely contents, the cleaning solution bottle on the right is likely to be heavier than the medicine or supplement bottle on the left.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 126800_241997.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Lipstick</p>
+        <p>Right Object: Lamp</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a lipstick, which is typically made of a combination of waxes, oils, and pigments, and is encased in a metal or plastic container. The object on the right is a lamp, which is likely made of glass and metal, and may contain a light bulb or other electrical components. Considering the materials and potential contents, the lamp is likely to be heavier than the lipstick due to its larger size and the materials it is made of.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 108108_115329.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Sandal</p>
+        <p>Right Object: Ladle</p>
+        <p>Groud Truth: left</p>
+        <p>Prediction: right</p>
+        <p>Reasoning: The object on the left is a sandal, and the object on the right is a ladle. The sandal, being a piece of footwear, is likely made of a lightweight material such as rubber or plastic, and it is empty. The ladle, on the other hand, is made of metal, which is a denser material. Although the ladle is not filled with any contents, the material it is made of inherently makes it heavier than the sandal.</p>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="image-container">
+        <p class="error">Image 211208_271385.jpg not found</p>
+      </div>
+      <div class="info-container">
+        <p>Left Object: Knife</p>
+        <p>Right Object: Lamp</p>
+        <p>Groud Truth: right</p>
+        <p>Prediction: left</p>
+        <p>Reasoning: The object on the left is a knife, and the object on the right is a lamp. The knife, being made of metal, is likely to be heavier than the lamp, which appears to be made of a lighter material such as plastic or metal with a fabric shade. The knife's solid construction and the material it is made from suggest it would have a greater mass than the lamp, which may contain a light bulb but is otherwise hollow.</p>
+      </div>
+    </div>
+  </body>
+</html>
